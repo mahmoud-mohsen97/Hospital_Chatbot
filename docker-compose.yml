@@ -1,0 +1,30 @@
+services:
+  hospital-chatbot:
+    build: .
+    container_name: hospital-chatbot
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONPATH=/app
+    env_file:
+      - .env
+    volumes:
+      - ./.chroma:/app/.chroma
+      - ./data/hospital_knowledge_base.csv:/app/data/hospital_knowledge_base.csv
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - hospital-network
+
+networks:
+  hospital-network:
+    driver: bridge
+
+volumes:
+  chroma-data:
+    driver: local 
