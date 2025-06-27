@@ -114,10 +114,12 @@ hospital_chatbot/
 │   ├── graph.py                       # Main conversation graph
 │   ├── state.py                       # State management
 │   └── ingestion.py                   # Data ingestion utilities
+├── __init__.py                        # Configuration module
 ├── streamlit_app.py                   # Main Streamlit application
 ├── test_integration.py                # Integration testing
 ├── Dockerfile                         # Docker configuration
 ├── docker-compose.yml                 # Docker Compose setup
+├── pyproject.toml                     # Python dependencies
 ├── requirements.txt                   # Python dependencies
 └── README.md                          # This file
 ```
