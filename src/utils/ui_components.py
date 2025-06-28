@@ -4,32 +4,20 @@ import time
 import pandas as pd
 from config.settings import FAQ_DATA_FILE
 
-def render_sidebar_info():
-    """Render hospital information in the sidebar."""
-    st.markdown('<div class="sidebar-content">', unsafe_allow_html=True)
-    st.header("🏥 Hospital Information")
-    
-    st.markdown("### Quick Access")
-    st.markdown("📍 **Location:** 123 Health Street, City, State")
-    st.markdown("📞 **Emergency:** 911")
-    st.markdown("🕒 **Visiting Hours:** 9 AM - 8 PM")
-    st.markdown("💊 **Pharmacy:** 8 AM - 9 PM")
-    st.markdown('</div>', unsafe_allow_html=True)
-
 def get_faq_data() -> Dict[str, str]:
     """Load FAQ data from CSV file."""
     try:
         df = pd.read_csv(str(FAQ_DATA_FILE))
         return dict(zip(df["question"], df["answer"]))
     except Exception as e:
-        st.error(f"Error loading FAQ data: {e}")
+        st.error(f"خطأ في تحميل بيانات الأسئلة الشائعة: {e}")
         return {}
 
 def generate_static_faq_response(faq_question: str, faq_data: Dict[str, str]) -> str:
     """
     Generate a static response for FAQ using the answer directly from CSV.
     """
-    static_answer = faq_data.get(faq_question, "I don't have a specific answer for this question.")
+    static_answer = faq_data.get(faq_question, "ليس لدي إجابة محددة لهذا السؤال.")
     
     # Return the answer directly from CSV without adding extra prompts
     return static_answer
@@ -72,39 +60,17 @@ def create_pipeline_context(faq_question: str, faq_answer: str, user_followup: s
     static_part = faq_answer.split("\n\n🔹")[0] if "\n\n🔹" in faq_answer else faq_answer
     
     context = f"""
-    Context: The user initially asked the FAQ question: "{faq_question}"
+    السياق: المستخدم سأل في البداية السؤال الشائع: "{faq_question}"
     
-    Standard FAQ Answer: {static_part}
+    الإجابة المعيارية للسؤال الشائع: {static_part}
     
-    User's Follow-up Request: {user_followup}
+    طلب المتابعة من المستخدم: {user_followup}
     
-    Please provide a detailed and helpful response that builds upon the FAQ answer and addresses the user's specific request. Be practical and actionable in your response.
+    يرجى تقديم إجابة مفصلة ومفيدة تبني على إجابة السؤال الشائع وتعالج طلب المستخدم المحدد. كن عملياً وقابلاً للتطبيق في إجابتك.
     """
     return context
 
-def render_services_section():
-    """Render hospital services in the sidebar."""
-    st.markdown("### Hospital Services")
-    services = [
-        "🚨 Emergency Care",
-        "🔬 Laboratory Services", 
-        "📡 Radiology",
-        "👶 Pediatrics",
-        "🤱 Maternity Ward",
-        "💊 Pharmacy",
-        "🍽️ Cafeteria",
-        "🎁 Gift Shop"
-    ]
-    
-    for service in services:
-        st.markdown(f"• {service}")
 
-def render_contact_info():
-    """Render contact information in the sidebar."""
-    st.markdown("### Contact Information")
-    st.markdown("📧 **Email:** info@hospital.com")
-    st.markdown("📱 **Phone:** (555) 123-4567")
-    st.markdown("🌐 **Website:** www.hospital.com")
 
 def stream_response(response: str, placeholder) -> str:
     """Stream the response text to simulate real-time typing."""
@@ -138,160 +104,392 @@ def stream_response(response: str, placeholder) -> str:
     
     return final_text
 
-def render_feedback_buttons(message_id: int) -> str:
-    """Render thumbs up/down feedback buttons for a message."""
-    col1, col2, col3 = st.columns([1, 1, 8])
-    
-    with col1:
-        if st.button("👍", key=f"thumbs_up_{message_id}", help="Helpful response"):
-            st.success("Thank you for your feedback!")
-            return "positive"
-    
-    with col2:
-        if st.button("👎", key=f"thumbs_down_{message_id}", help="Needs improvement"):
-            st.info("Thank you for your feedback. We'll work to improve!")
-            return "negative"
-    
-    return None
 
-def render_statistics(conversation_count: int, user_feedback: Dict[int, str]):
-    """Render conversation statistics."""
-    if conversation_count > 0:
-        st.markdown("---")
-        col1, col2, col3 = st.columns(3)
-        
-        with col1:
-            st.metric("Conversations", conversation_count)
-        
-        with col2:
-            positive_feedback = sum(1 for feedback in user_feedback.values() if feedback == "positive")
-            st.metric("Positive Feedback", positive_feedback)
-        
-        with col3:
-            total_messages = len(user_feedback)
-            satisfaction_rate = f"{(positive_feedback / total_messages * 100):.1f}%" if total_messages > 0 else "N/A"
-            st.metric("Satisfaction Rate", satisfaction_rate)
-
-def render_sample_questions() -> str:
-    """Render sample questions for users to click."""
-    st.markdown("### 💡 Try asking me:")
-    sample_questions = [
-        "How can I book an appointment?",
-        "What are your visiting hours?", 
-        "Do you accept my insurance?",
-        "Where is the hospital located?",
-        "What should I bring to my appointment?"
-    ]
-    
-    cols = st.columns(3)
-    for i, question in enumerate(sample_questions):
-        with cols[i % 3]:
-            if st.button(question, key=f"sample_{i}"):
-                return question
-    return None
 
 def apply_custom_css():
     """Apply custom CSS styling to the Streamlit app."""
     st.markdown("""
     <style>
-        .main > div {
-            padding: 1.5rem 1rem;
+        /* Import compact, professional font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+        
+        /* Fix Streamlit sidebar collapse icon - Replace Material Icons with SVG */
+        [data-testid="collapsedControl"] {
+            position: relative !important;
+            width: 40px !important;
+            height: 40px !important;
+            overflow: hidden !important;
         }
         
-        .stChatMessage {
-            padding: 1rem;
-            border-radius: 10px;
-            margin: 0.5rem 0;
-            white-space: pre-wrap !important;
+        /* Hide all text content */
+        [data-testid="collapsedControl"] * {
+            opacity: 0 !important;
+            font-size: 0 !important;
         }
         
+        /* Add custom SVG arrow icon */
+        [data-testid="collapsedControl"]::before {
+            content: "" !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width: 20px !important;
+            height: 20px !important;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3E%3Cpath d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z'/%3E%3C/svg%3E") !important;
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            display: block !important;
+            z-index: 1000 !important;
+        }
+        
+        [data-testid="collapsedControl"]:hover::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z'/%3E%3C/svg%3E") !important;
+        }
+        
+        /* RTL layout and base font */
+        .stApp {
+            direction: rtl !important;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            font-size: 14px !important;
+        }
+        
+        /* Compact sidebar width when expanded */
+        section[data-testid="stSidebar"]:not([aria-expanded="false"]) {
+            width: 250px !important;
+            min-width: 250px !important;
+        }
+        
+        /* Main content area */
+        .main {
+            padding: 1rem !important;
+            direction: rtl;
+        }
+        
+        /* Compact Header Banner */
         .chat-header {
-            background: linear-gradient(90deg, #1f77b4, #4a90e2);
-            color: white;
-            padding: 1rem;
-            border-radius: 10px;
-            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #1f77b4, #4a90e2) !important;
+            color: white !important;
+            padding: 1rem 1.5rem !important;
+            border-radius: 12px !important;
+            margin-bottom: 1rem !important;
             text-align: center;
+            direction: rtl;
+            box-shadow: 0 4px 12px rgba(31, 119, 180, 0.2) !important;
         }
         
+        .chat-header h1 {
+            font-size: 1.5rem !important;
+            font-weight: 600 !important;
+            margin: 0 0 0.25rem 0 !important;
+            color: white !important;
+        }
+        
+        .chat-header p {
+            font-size: 0.9rem !important;
+            opacity: 0.9 !important;
+            margin: 0 !important;
+            color: white !important;
+        }
+        
+        /* Chat Message Styling */
+        .stChatMessage {
+            padding: 0.75rem 1rem !important;
+            border-radius: 18px !important;
+            margin: 0.5rem 0 !important;
+            direction: rtl;
+            text-align: right;
+            max-width: 85% !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            font-size: 14px !important;
+            line-height: 1.4 !important;
+        }
+        
+        /* Sidebar Content */
         .sidebar-content {
-            background-color: #f8f9fa;
-            padding: 1rem;
-            border-radius: 10px;
-            margin-bottom: 1rem;
+            background-color: #f8f9fa !important;
+            padding: 0.75rem !important;
+            border-radius: 8px !important;
+            margin-bottom: 0.75rem !important;
+            direction: rtl;
+            text-align: right;
+            border: 1px solid #e9ecef !important;
         }
         
-        .metric-card {
-            background-color: white;
-            padding: 0.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #1f77b4;
-            margin: 0.25rem 0;
+        .sidebar-content h2, .sidebar-content h3 {
+            font-size: 1rem !important;
+            font-weight: 600 !important;
+            margin: 0 0 0.5rem 0 !important;
+            color: #2c3e50 !important;
         }
         
-        .error-message {
-            background-color: #ffe6e6;
-            border: 1px solid #ff9999;
-            border-radius: 5px;
-            padding: 1rem;
-            margin: 1rem 0;
+        .sidebar-content p, .sidebar-content li {
+            font-size: 0.85rem !important;
+            line-height: 1.3 !important;
+            margin: 0.25rem 0 !important;
         }
         
-        .success-message {
-            background-color: #e6ffe6;
-            border: 1px solid #99ff99;
-            border-radius: 5px;
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-        
-        /* Make feedback buttons smaller and less prominent */
+        /* Compact Button Styling */
         .stButton > button {
-            font-size: 0.8rem;
-            padding: 0.25rem 0.5rem;
-            margin: 0.1rem;
+            font-size: 0.85rem !important;
+            padding: 0.5rem 1rem !important;
+            margin: 0.25rem !important;
+            border-radius: 8px !important;
+            border: 1.5px solid #e9ecef !important;
+            background-color: white !important;
+            color: #495057 !important;
+            transition: all 0.2s ease !important;
+            font-weight: 500 !important;
+            min-height: 38px !important;
         }
         
-        /* Reduce space around metrics */
-        [data-testid="metric-container"] {
-            background-color: transparent;
-            border: none;
-            padding: 0.25rem;
+        .stButton > button:hover {
+            border-color: #1f77b4 !important;
+            background-color: #f8f9fa !important;
+            color: #1f77b4 !important;
+            transform: translateY(-1px) !important;
+            box-shadow: 0 2px 8px rgba(31, 119, 180, 0.15) !important;
         }
         
-        /* Make chat input more prominent */
-        .stChatInput {
-            border-radius: 15px;
-        }
-        
-        /* Reduce visual noise in sidebar */
-        .element-container {
-            margin-bottom: 0.5rem;
-        }
-        
-        /* Style the FAQ dropdown */
-        .stSelectbox > div > div > select {
-            border-radius: 8px;
-            border: 2px solid #e9ecef;
-            background-color: white;
-        }
-        
-        .stSelectbox > div > div > select:focus {
-            border-color: #1f77b4;
-            box-shadow: 0 0 5px rgba(31, 119, 180, 0.3);
-        }
-        
-        /* Make main area sample buttons more prominent */
+        /* Sample Questions Buttons */
         .main .stButton > button {
-            border-radius: 10px;
-            border: 2px solid #e9ecef;
-            background-color: white;
-            transition: all 0.3s ease;
+            border-radius: 10px !important;
+            border: 2px solid #e9ecef !important;
+            background-color: white !important;
+            transition: all 0.3s ease !important;
+            direction: rtl;
+            padding: 0.75rem 1rem !important;
+            font-size: 0.9rem !important;
+            font-weight: 500 !important;
         }
         
         .main .stButton > button:hover {
-            border-color: #1f77b4;
-            background-color: #f8f9fa;
+            border-color: #1f77b4 !important;
+            background-color: #f8f9fa !important;
+            color: #1f77b4 !important;
+            box-shadow: 0 4px 12px rgba(31, 119, 180, 0.15) !important;
+        }
+        
+        /* Feedback Buttons */
+        .stButton[key*="thumbs"] > button {
+            font-size: 0.75rem !important;
+            padding: 0.25rem 0.5rem !important;
+            margin: 0.1rem 0.25rem !important;
+            min-height: 28px !important;
+            background-color: transparent !important;
+            border: 1px solid #dee2e6 !important;
+            border-radius: 6px !important;
+        }
+        
+        .stButton[key*="thumbs"] > button:hover {
+            background-color: #f8f9fa !important;
+            border-color: #adb5bd !important;
+        }
+        
+        /* Compact Metrics */
+        [data-testid="metric-container"] {
+            background-color: white !important;
+            border: 1px solid #e9ecef !important;
+            border-radius: 8px !important;
+            padding: 0.5rem !important;
+            margin: 0.25rem 0 !important;
+            direction: rtl;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+        }
+        
+        [data-testid="metric-container"] > div {
+            font-size: 0.8rem !important;
+        }
+        
+        [data-testid="metric-container"] [data-testid="metric-value"] {
+            font-size: 1.2rem !important;
+            font-weight: 600 !important;
+        }
+        
+        /* Chat Input - Fixed overlap */
+        .stChatInput {
+            border-radius: 12px !important;
+            direction: rtl;
+            margin-top: 0.5rem !important;
+        }
+        
+        .stChatInput textarea {
+            font-size: 0.9rem !important;
+            padding: 0.75rem 3.5rem 0.75rem 1rem !important;
+            border-radius: 12px !important;
+            border: 2px solid #e9ecef !important;
+            min-height: 50px !important;
+            max-height: 120px !important;
+            resize: vertical !important;
+        }
+        
+        .stChatInput textarea:focus {
+            border-color: #1f77b4 !important;
+            box-shadow: 0 0 0 3px rgba(31, 119, 180, 0.1) !important;
+        }
+        
+        /* FAQ Dropdown */
+        .stSelectbox > div > div > select {
+            border-radius: 8px !important;
+            border: 2px solid #e9ecef !important;
+            background-color: white !important;
+            direction: rtl;
+            text-align: right;
+            font-size: 0.85rem !important;
+            padding: 0.5rem !important;
+        }
+        
+        .stSelectbox > div > div > select:focus {
+            border-color: #1f77b4 !important;
+            box-shadow: 0 0 5px rgba(31, 119, 180, 0.3) !important;
+        }
+        
+        /* Reduce spacing */
+        .element-container {
+            margin-bottom: 0.5rem !important;
+        }
+        
+        hr {
+            margin: 0.75rem 0 !important;
+            border: none !important;
+            border-top: 1px solid #e9ecef !important;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 600 !important;
+            color: #2c3e50 !important;
+            line-height: 1.3 !important;
+        }
+        
+        p, span, div {
+            font-family: 'Inter', sans-serif !important;
+            color: #495057 !important;
+            line-height: 1.4 !important;
+        }
+        
+        .main h3 {
+            font-size: 1.1rem !important;
+            margin: 0.5rem 0 !important;
+            color: #2c3e50 !important;
+        }
+        
+        /* Collapsible Sections */
+        .streamlit-expanderHeader {
+            font-size: 0.9rem !important;
+            font-weight: 600 !important;
+            padding: 0.5rem !important;
+            background-color: #f8f9fa !important;
+            border-radius: 6px !important;
+            border: 1px solid #e9ecef !important;
+        }
+        
+        .streamlit-expanderContent {
+            padding: 0.5rem !important;
+            border: 1px solid #e9ecef !important;
+            border-top: none !important;
+            border-radius: 0 0 6px 6px !important;
+        }
+        
+        /* Clear Chat Button */
+        .stButton[key*="clear"] > button,
+        .stButton[key*="مسح"] > button {
+            background-color: #dc3545 !important;
+            color: white !important;
+            border: 2px solid #dc3545 !important;
+            font-weight: 500 !important;
+        }
+        
+        .stButton[key*="clear"] > button:hover,
+        .stButton[key*="مسح"] > button:hover {
+            background-color: #c82333 !important;
+            border-color: #c82333 !important;
+        }
+        
+        /* Emergency Button Emphasis */
+        .stButton[key*="ambulance"] > button,
+        .stButton[key*="إسعاف"] > button,
+        .stButton[key*="emergency"] > button,
+        .stButton[key*="طوارئ"] > button {
+            background: linear-gradient(135deg, #dc3545, #c82333) !important;
+            color: white !important;
+            border: none !important;
+            font-weight: 600 !important;
+            box-shadow: 0 3px 10px rgba(220, 53, 69, 0.3) !important;
+        }
+        
+        .stButton[key*="ambulance"] > button:hover,
+        .stButton[key*="إسعاف"] > button:hover,
+        .stButton[key*="emergency"] > button:hover,
+        .stButton[key*="طوارئ"] > button:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4) !important;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            section[data-testid="stSidebar"]:not([aria-expanded="false"]) {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+            
+            .main {
+                padding: 0.5rem !important;
+            }
+            
+            .chat-header {
+                padding: 0.75rem 1rem !important;
+                margin-bottom: 0.75rem !important;
+            }
+            
+            .chat-header h1 {
+                font-size: 1.25rem !important;
+            }
+            
+            .stChatMessage {
+                max-width: 95% !important;
+                font-size: 0.85rem !important;
+                padding: 0.5rem 0.75rem !important;
+            }
+            
+            .stButton > button {
+                font-size: 0.8rem !important;
+                padding: 0.5rem 0.75rem !important;
+            }
+            
+            .stChatInput textarea {
+                padding: 0.5rem 3rem 0.5rem 0.75rem !important;
+                min-height: 45px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main {
+                padding: 0.25rem !important;
+            }
+            
+            .chat-header {
+                padding: 0.5rem !important;
+            }
+            
+            .chat-header h1 {
+                font-size: 1.1rem !important;
+            }
+            
+            .sidebar-content {
+                padding: 0.5rem !important;
+            }
+            
+            .stChatMessage {
+                padding: 0.5rem !important;
+                font-size: 0.8rem !important;
+            }
+            
+            .stChatInput textarea {
+                padding: 0.5rem 2.5rem 0.5rem 0.5rem !important;
+            }
         }
     </style>
     """, unsafe_allow_html=True) 

@@ -16,19 +16,19 @@ KNOWLEDGE_BASE_FILE = DATA_DIR / "hospital_knowledge_base.csv"
 
 # Hospital Information
 HOSPITAL_INFO = {
-    "name": "🏥 Hospital Assistant",
-    "location": "Maadi, Cairo",
+    "name": "🏥 Hospital Assistant AI Chatbot",
+    "location": "القاهرة",
     "emergency_number": "123",
     "phone": "02 25256289",
     "email": "info@hospital.com",
     "website": "www.hospital.com",
-    "visiting_hours": "9 AM - 8 PM",
-    "pharmacy_hours": "8 AM - 9 PM"
+    "visiting_hours": "9 صباحاً - 8 مساءً",
+    "pharmacy_hours": "8 صباحاً - 9 مساءً"
 }
 
 # Streamlit Configuration
 STREAMLIT_CONFIG = {
-    "page_title": "🏥 Hospital Assistant",
+    "page_title": "🏥 Hospital Assistant AI Chatbot",
     "page_icon": "🏥",
     "layout": "wide",
     "initial_sidebar_state": "expanded"
@@ -44,31 +44,31 @@ LLM_CONFIG = {
 
 # Hospital Services
 HOSPITAL_SERVICES = [
-    "🚨 Emergency Care",
-    "🔬 Laboratory Services", 
-    "📡 Radiology",
-    "👶 Pediatrics",
-    "🤱 Maternity Ward",
-    "💊 Pharmacy",
-    "🍽️ Cafeteria",
-    "🎁 Gift Shop"
+    "🚨 الرعاية الطارئة",
+    "🔬 خدمات المختبر", 
+    "📡 الأشعة",
+    "👶 طب الأطفال",
+    "🤱 قسم الولادة",
+    "💊 الصيدلية",
+    "🍽️ الكافتيريا",
+    "🎁 متجر الهدايا"
 ]
 
 # Sample FAQ Questions for UI
 SAMPLE_FAQ_QUESTIONS = [
-    "كيف يمكنني حجز موعد؟ - How can I book an appointment?",
-    "ما هي مواعيد الزيارة؟ - What are your visiting hours?",
-    "هل لديكم صيدلية؟ - Do you have a pharmacy?",
-    "ما هي التأمينات التي تقبلونها؟ - What insurance do you accept?",
-    "أين تقع المستشفى؟ - Where is the hospital located?",
-    "ما هي أوقات العمل؟ - What are your operating hours?",
-    "ما هي العيادات المتوفرة؟ - What are the available clinics?",
-    "أريد طلب سيارة إسعاف - I want to request an ambulance"
+    "كيف يمكنني حجز موعد؟",
+    "ما هي مواعيد الزيارة؟",
+    "هل لديكم صيدلية؟",
+    "ما هي التأمينات التي تقبلونها؟",
+    "أين تقع المستشفى؟",
+    "ما هي أوقات العمل؟",
+    "ما هي العيادات المتوفرة؟",
+    "أريد طلب سيارة إسعاف"
 ]
 
 # Popular Questions for Main Interface
 POPULAR_QUESTIONS = [
-    "ما هي العيادات المتوفرة؟ - What are the available clinics?",
-    "ما هي أوقات العمل؟ - What are your operating hours?",
-    "أريد طلب سيارة إسعاف - I want to request an ambulance"
+    "ما هي العيادات المتوفرة؟",
+    "ما هي أوقات العمل؟",
+    "أريد طلب سيارة إسعاف"
 ] 
