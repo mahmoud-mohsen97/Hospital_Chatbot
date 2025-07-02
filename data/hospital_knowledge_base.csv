@@ -1,31 +1,75 @@
 category,question,answer,Clinic / Specialty - العيادة / التخصص,Doctor's Name - اسم الطبيب,Consultation Fee (EGP) - سعر الكشف,Available Days - الأيام المتاحة,Appointments Times - المواعيد
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Cardiology - أمراض القلب,Dr. Ahmed Kamal / Dr. Laila Fouad - د. أحمد كمال / د. ليلى فؤاد,550 - 850 EGP,"Sunday, Tuesday, Thursday",10:00 AM - 2:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Orthopedic Surgery - جراحة العظام,Dr. Khaled Mansour / Dr. Sara Gamal - د. خالد منصور / د. سارة جمال,500 - 800 EGP,"Monday, Wednesday",5:00 PM - 9:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Obstetrics & Gynecology - النساء والتوليد,Dr. Mona Said / Dr. Youssef Helmy - د. منى سعيد / د. يوسف حلمي,600 - 900 EGP,"Sunday, Wednesday",11:00 AM - 3:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Pediatrics - الأطفال,Dr. Nour El Din Ali / Dr. Heba Mahmoud - د. نور الدين علي / د. هبة محمود,450 - 700 EGP,"Tuesday, Thursday",4:00 PM - 8:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,"Ear, Nose & Throat (ENT) - الأنف والأذن والحنجرة",Dr. Tarek Zaki - د. طارق زكي,500 - 750 EGP,"Monday, Wednesday",9:00 AM - 1:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Ophthalmology - العيون,Dr. Amira Reda - د. أميرة رضا,550 - 800 EGP,"Sunday, Tuesday",6:00 PM - 10:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Dermatology - الجلدية,Dr. Karim Hossam - د. كريم حسام,550 - 850 EGP,"Tuesday, Thursday, Saturday",10:00 AM - 2:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,General Surgery - الجراحة العامة,Dr. Rami Adel - د. رامي عادل,500 - 800 EGP,"Sunday, Wednesday",3:00 PM - 7:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Neurosurgery - جراحة المخ والأعصاب,Dr. Nadine Sabry - د. نادين صبري,700 - 1000 EGP,"Monday, Wednesday",1:00 PM - 5:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Urology - جراحة المسالك البولية,Dr. Sherif Mokhtar - د. شريف مختار,500 - 800 EGP,"Tuesday, Thursday",10:30 AM - 2:30 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Plastic Surgery - جراحة التجميل,Dr. Dina Salah - د. دينا صلاح,800 - 1200 EGP,"Sunday, Wednesday",4:30 PM - 8:30 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Gastroenterology & Hepatology - أمراض الجهاز الهضمي والكبد,Dr. Adel Mourad - د. عادل مراد,550 - 850 EGP,"Monday, Thursday",12:00 PM - 4:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Endocrinology & Diabetes - أمراض الغدد الصماء والسكري,Dr. Salma Kamal - د. سلمى كمال,500 - 800 EGP,"Tuesday, Wednesday",5:00 PM - 9:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Nephrology (Kidney) - أمراض الكلى,Dr. Maged Samir - د. ماجد سمير,500 - 750 EGP,"Sunday, Tuesday",1:00 PM - 5:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Pulmonology (Respiratory) - أمراض الجهاز التنفسي,Dr. Yasmin El-Shenawy - د. ياسمين الشناوي,500 - 750 EGP,"Monday, Thursday",10:00 AM - 2:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Dentistry - الأسنان,Dr. Iyad Fahmy - د. إياد فهمي,350 - 550 EGP (for initial examination - للكشف المبدئي),"Sunday, Wednesday",9:00 AM - 1:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,,,Physical Medicine & Rehabilitation - الطب الطبيعي والتأهيل,Dr. Alaa El Din - د. علاء الدين,400 - 650 EGP,"Tuesday, Thursday",3:00 PM - 7:00 PM
-أسعار العمليات Surgery Prices,I would like to know the cost of your surgeries? -  أود معرفة تكلفة العمليات لديكم؟,,استئصال الزائدة الدودية / Appendectomy,,"35,000 - 65,000 EGP",,
-أسعار العمليات Surgery Prices,,,استئصال اللوزتين / Tonsillectomy,,"25,000 - 45,000 EGP",,
-أسعار العمليات Surgery Prices,,,الولادة القيصرية / Cesarean Section (C-Section),,"40,000 - 80,000 EGP",,
-أسعار العمليات Surgery Prices,,,استئصال المرارة بالمنظار / Laparoscopic Cholecystectomy (Gallbladder Removal),,"60,000 - 100,000 EGP",,
-أسعار العمليات Surgery Prices,,,إصلاح الفتق الإربي (بالمنظار) / Laparoscopic Inguinal Hernia Repair,,"50,000 - 90,000 EGP",,
-أسعار العمليات Surgery Prices,,,عملية المياه البيضاء (إزالة إعتام عدسة العين) / Cataract Surgery,,"30,000 - 55,000 EGP (للعين الواحدة)",,
-أسعار العمليات Surgery Prices,,,منظار الركبة (لتشخيص أو إصلاح بسيط) / Knee Arthroscopy (for diagnosis or minor repair),,"55,000 - 95,000 EGP",,
-أسعار العمليات Surgery Prices,,,عملية استئصال ورم بسيط بالثدي / Simple Breast Tumor Excision,,"70,000 - 120,000 EGP",,
-أسعار العمليات Surgery Prices,,,تثبيت كسر بسيط (بالأدوات الجراحية) / Simple Fracture Fixation (with surgical tools),,"60,000 - 110,000 EGP",,
-أسعار العمليات Surgery Prices,,,عملية اللحمية للأطفال / Adenoidectomy for Children,,"20,000 - 40,000 EGP (قابلة للتغيير حسب رأي الطبيب المختص)",,
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة امراض القلب المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة امراض القلب؟
+- كم سعر كشف امراض القلب ؟",,Cardiology - أمراض القلب,Dr. Ahmed Kamal / Dr. Laila Fouad - د. أحمد كمال / د. ليلى فؤاد,550 - 850 EGP,"Sunday, Tuesday, Thursday",10:00 AM - 2:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة جراحة العظام المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة جراحة العظام؟
+- كم سعر كشف جراحة العظام ؟",,Orthopedic Surgery - جراحة العظام,Dr. Khaled Mansour / Dr. Sara Gamal - د. خالد منصور / د. سارة جمال,500 - 800 EGP,"Monday, Wednesday",5:00 PM - 9:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة النساء والتوليد المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة النساء والتوليد؟
+- كم سعر كشف النساء والتوليد ؟",,Obstetrics & Gynecology - النساء والتوليد,Dr. Mona Said / Dr. Youssef Helmy - د. منى سعيد / د. يوسف حلمي,600 - 900 EGP,"Sunday, Wednesday",11:00 AM - 3:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الأطفال المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة الأطفال؟
+- كم سعر كشف الأطفال ؟",,Pediatrics - الأطفال,Dr. Nour El Din Ali / Dr. Heba Mahmoud - د. نور الدين علي / د. هبة محمود,450 - 700 EGP,"Tuesday, Thursday",4:00 PM - 8:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الأنف والأذن والحنجرة المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة الأنف والأذن والحنجرة؟
+- كم سعر كشف الأنف والأذن والحنجرة ؟",,"Ear, Nose & Throat (ENT) - الأنف والأذن والحنجرة",Dr. Tarek Zaki - د. طارق زكي,500 - 750 EGP,"Monday, Wednesday",9:00 AM - 1:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة العيون المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة العيون؟
+- كم سعر كشف العيون ؟",,Ophthalmology - العيون,Dr. Amira Reda - د. أميرة رضا,550 - 800 EGP,"Sunday, Tuesday",6:00 PM - 10:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الجلدية المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة الجلدية؟
+- كم سعر كشف الجلدية ؟",,Dermatology - الجلدية,Dr. Karim Hossam - د. كريم حسام,550 - 850 EGP,"Tuesday, Thursday, Saturday",10:00 AM - 2:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الجراحة العامة المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة الجراحة العامة؟
+- كم سعر كشف الجراحة العامة ؟",,General Surgery - الجراحة العامة,Dr. Rami Adel - د. رامي عادل,500 - 800 EGP,"Sunday, Wednesday",3:00 PM - 7:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة جراحة المخ والأعصاب المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة جراحة المخ والأعصاب؟
+- كم سعر كشف جراحة المخ والأعصاب ؟",,Neurosurgery - جراحة المخ والأعصاب,Dr. Nadine Sabry - د. نادين صبري,700 - 1000 EGP,"Monday, Wednesday",1:00 PM - 5:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة جراحة المسالك البولية المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة جراحة المسالك البولية؟
+- كم سعر كشف جراحة المسالك البولية ؟",,Urology - جراحة المسالك البولية,Dr. Sherif Mokhtar - د. شريف مختار,500 - 800 EGP,"Tuesday, Thursday",10:30 AM - 2:30 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة جراحة التجميل المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة جراحة التجميل؟
+- كم سعر كشف جراحة التجميل ؟",,Plastic Surgery - جراحة التجميل,Dr. Dina Salah - د. دينا صلاح,800 - 1200 EGP,"Sunday, Wednesday",4:30 PM - 8:30 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة أمراض الجهاز الهضمي والكبد المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة أمراض الجهاز الهضمي والكبد؟
+- كم سعر كشف أمراض الجهاز الهضمي والكبد ؟",,Gastroenterology & Hepatology - أمراض الجهاز الهضمي والكبد,Dr. Adel Mourad - د. عادل مراد,550 - 850 EGP,"Monday, Thursday",12:00 PM - 4:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة أمراض الغدد الصماء والسكري المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة أمراض الغدد الصماء والسكري؟
+- كم سعر كشف أمراض الغدد الصماء والسكري؟",,Endocrinology & Diabetes - أمراض الغدد الصماء والسكري,Dr. Salma Kamal - د. سلمى كمال,500 - 800 EGP,"Tuesday, Wednesday",5:00 PM - 9:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة أمراض الكلى المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة  أمراض الكلى؟
+- كم سعر كشف  أمراض الكلى؟",,Nephrology (Kidney) - أمراض الكلى,Dr. Maged Samir - د. ماجد سمير,500 - 750 EGP,"Sunday, Tuesday",1:00 PM - 5:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة أمراض الجهاز التنفسي المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة أمراض الجهاز التنفسي؟
+- كم سعر كشف أمراض الجهاز التنفسي؟",,Pulmonology (Respiratory) - أمراض الجهاز التنفسي,Dr. Yasmin El-Shenawy - د. ياسمين الشناوي,500 - 750 EGP,"Monday, Thursday",10:00 AM - 2:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الأسنان المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة الأسنان؟
+- كم سعر كشف الأسنان ؟",,Dentistry - الأسنان,Dr. Iyad Fahmy - د. إياد فهمي,350 - 550 EGP (for initial examination - للكشف المبدئي),"Sunday, Wednesday",9:00 AM - 1:00 PM
+Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الطب الطبيعي والتأهيل المتاحين ؟
+- ما هي الأيام المتاحه و المواعيد لعيادة الطب الطبيعي والتأهيل؟
+- كم سعر كشف الطب الطبيعي والتأهيل ؟",,Physical Medicine & Rehabilitation - الطب الطبيعي والتأهيل,Dr. Alaa El Din - د. علاء الدين,400 - 650 EGP,"Tuesday, Thursday",3:00 PM - 7:00 PM
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Appendectomy surgeries?
+ -  أود معرفة تكلفة عملية استئصال الزائدة الدودية لديكم؟",,استئصال الزائدة الدودية / Appendectomy,,"35,000 - 65,000 EGP",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Tonsillectomy surgeries?
+ -  أود معرفة تكلفة عملية استئصال اللوزتين لديكم؟",,استئصال اللوزتين / Tonsillectomy,,"25,000 - 45,000 EGP",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Cesarean Section (C-Section) surgeries?
+ -  أود معرفة تكلفة عملية الولادة القيصرية لديكم؟",,الولادة القيصرية / Cesarean Section (C-Section),,"40,000 - 80,000 EGP",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Laparoscopic Cholecystectomy surgeries?
+ -  أود معرفة تكلفة عملية استئصال المرارة بالمنظار لديكم؟",,استئصال المرارة بالمنظار / Laparoscopic Cholecystectomy (Gallbladder Removal),,"60,000 - 100,000 EGP",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Laparoscopic Inguinal Hernia Repair surgeries?
+ -  أود معرفة تكلفة عملية إصلاح الفتق الإربي لديكم؟",,إصلاح الفتق الإربي (بالمنظار) / Laparoscopic Inguinal Hernia Repair,,"50,000 - 90,000 EGP",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Cataract surgeries?
+ -  أود معرفة تكلفة عملية المياه البيضاء (إزالة إعتام عدسة العين) لديكم؟",,عملية المياه البيضاء (إزالة إعتام عدسة العين) / Cataract Surgery,,"30,000 - 55,000 EGP (للعين الواحدة)",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Knee Arthroscopy surgeries?
+ -  أود معرفة تكلفة عملية منظار الركبة (لتشخيص أو إصلاح بسيط) لديكم؟",,منظار الركبة (لتشخيص أو إصلاح بسيط) / Knee Arthroscopy (for diagnosis or minor repair),,"55,000 - 95,000 EGP",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Simple Breast Tumor Excision surgeries?
+ -  أود معرفة تكلفة عملية استئصال ورم بسيط بالثدي لديكم؟",,عملية استئصال ورم بسيط بالثدي / Simple Breast Tumor Excision,,"70,000 - 120,000 EGP",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Simple Fracture Fixation (with surgical tools) surgeries?
+ -  أود معرفة تكلفة عملية تثبيت كسر بسيط (بالأدوات الجراحية) لديكم؟",,تثبيت كسر بسيط (بالأدوات الجراحية) / Simple Fracture Fixation (with surgical tools),,"60,000 - 110,000 EGP",,
+أسعار العمليات Surgery Prices,"- I would like to know the cost of your Adenoidectomy for Children surgeries?
+ -  أود معرفة تكلفة عملية عملية اللحمية للأطفال لديكم؟",,عملية اللحمية للأطفال / Adenoidectomy for Children,,"20,000 - 40,000 EGP (قابلة للتغيير حسب رأي الطبيب المختص)",,
 التأمين الصحي Health Insurance,ماهي شركات التأمين التي تتعاملون معها؟ - ?Which insurance companies do you deal with,"1. مصر للتأمين
 2. أكسا للتأمين
 3. أليانز للتأمين
@@ -98,4 +142,4 @@ Information about Clinic / Specialty - معلومات عن العيادة / ال
 * Save original receipts and medical reports (often required to be submitted within 15–30 days) and keep digital copies for any future queries or disputes .
 
 
-",,,,, 
+",,,,,
