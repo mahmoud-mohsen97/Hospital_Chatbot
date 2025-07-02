@@ -61,7 +61,7 @@ Edit `.env` with your API keys:
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_MODEL=gpt-4.1-mini
 TEMPERATURE=0
-MAX_TOKENS=500
+MAX_TOKENS=1000
 ```
 
 ### 2. Test the Integration
@@ -289,25 +289,6 @@ python test_integration.py
 2. **Maintainability**: Single source of truth for settings, easy updates
 3. **Production Readiness**: Proper directory structure, Docker deployment
 4. **Developer Experience**: Clear project structure, comprehensive documentation
-
-## 🚀 Next Steps
-
-Your chatbot is production-ready! Consider:
-
-1. **🌐 Custom Domain**: Set up reverse proxy (nginx)
-2. **🔒 SSL Certificate**: Add HTTPS for production
-3. **📊 Monitoring**: Implement logging and analytics
-4. **⚖️ Scaling**: Use load balancers for high traffic
-5. **💾 Backup**: Set up data backup strategies
-6. **🔄 Updates**: Plan for regular content updates
-
-## 📄 License
-
-[Add your license information here]
-
-## 🤝 Contributing
-
-[Add contribution guidelines here]
 
 ---
 
