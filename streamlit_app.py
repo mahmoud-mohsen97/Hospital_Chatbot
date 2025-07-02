@@ -9,7 +9,8 @@ from src.utils.ui_components import (
     get_faq_data, 
     generate_static_faq_response,
     is_follow_up_to_faq,
-    create_pipeline_context
+    create_pipeline_context,
+    show_custom_sidebar
 )
 from config.settings import (
     STREAMLIT_CONFIG,
@@ -29,6 +30,9 @@ st.set_page_config(**STREAMLIT_CONFIG)
 # Apply custom CSS styling
 apply_custom_css()
 
+# Show custom sidebar
+show_custom_sidebar()
+
 # Initialize session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -47,84 +51,6 @@ if "user_has_interacted" not in st.session_state:
 if "last_processed_faq" not in st.session_state:
     st.session_state.last_processed_faq = None
 
-
-# Sidebar
-with st.sidebar:
-    st.markdown('<div class="sidebar-content">', unsafe_allow_html=True)
-    
-    # Quick Access Information - Always visible
-    st.header("🏥 معلومات المستشفى")
-    
-    st.markdown("### وصول سريع")
-    st.markdown(f"📍 **الموقع:** {HOSPITAL_INFO['location']}")
-    st.markdown(f"📞 **الطوارئ:** {HOSPITAL_INFO['emergency_number']}")
-    st.markdown(f"🕒 **الزيارات:** {HOSPITAL_INFO['visiting_hours']}")
-    st.markdown(f"💊 **الصيدلية:** {HOSPITAL_INFO['pharmacy_hours']}")
-    
-    # FAQ Section - Collapsible
-    with st.expander("📋 الأسئلة الشائعة", expanded=True):
-        faqs = SAMPLE_FAQ_QUESTIONS
-        
-        # FAQ dropdown menu
-        dropdown_label = "اختر سؤالاً:" if not st.session_state.messages else "ابدأ محادثة جديدة بسؤال شائع:"
-        
-        selected_faq = st.selectbox(
-            dropdown_label,
-            options=[""] + faqs,
-            index=0,
-            key="faq_dropdown",
-            help="اختر سؤالاً من الأسئلة الشائعة" + (" (سيبدأ محادثة جديدة)" if st.session_state.messages else "")
-        )
-        
-        # Handle FAQ selection directly
-        if selected_faq and selected_faq != "":
-            # Check if this is a different FAQ than the last processed one
-            if not hasattr(st.session_state, 'last_processed_faq') or st.session_state.last_processed_faq != selected_faq:
-                # Always clear everything and start fresh when FAQ is selected
-                st.session_state.messages = []
-                st.session_state.conversation_count = 0
-                st.session_state.user_feedback = {}
-                st.session_state.message_counter = 0
-                st.session_state.pending_faq_response = None
-                st.session_state.user_has_interacted = True
-                st.session_state.last_processed_faq = selected_faq
-                
-                # Add FAQ as user message
-                st.session_state.message_counter += 1
-                st.session_state.messages.append({"role": "user", "content": selected_faq, "id": st.session_state.message_counter})
-                
-                # Generate static response
-                static_response = generate_static_faq_response(selected_faq, st.session_state.faq_data)
-                st.session_state.pending_faq_response = static_response
-                
-                # Rerun to update the UI
-                st.rerun()
-    
-    # Hospital Services - Collapsible
-    with st.expander("🏥 خدمات المستشفى", expanded=False):
-        for service in HOSPITAL_SERVICES:
-            st.markdown(f"• {service}")
-    
-    # Contact Information - Collapsible
-    with st.expander("📞 معلومات الاتصال", expanded=False):
-        st.markdown(f"📧 **البريد الإلكتروني:** {HOSPITAL_INFO['email']}")
-        st.markdown(f"📱 **الهاتف:** {HOSPITAL_INFO['phone']}")
-        st.markdown(f"🌐 **الموقع الإلكتروني:** {HOSPITAL_INFO['website']}")
-    
-    # Small statistics section in sidebar (only if there are conversations)
-    if st.session_state.conversation_count > 0:
-        with st.expander("📊 إحصائيات المحادثة", expanded=False):
-            col1, col2 = st.columns(2)
-            with col1:
-                st.metric("المحادثات", st.session_state.conversation_count, label_visibility="collapsed")
-                st.caption("عدد الرسائل")
-            
-            with col2:
-                positive_feedback = sum(1 for feedback in st.session_state.user_feedback.values() if feedback == "positive")
-                st.metric("👍", positive_feedback, label_visibility="collapsed")
-                st.caption("إجابات مفيدة")
-    
-    st.markdown('</div>', unsafe_allow_html=True)
 
 # Main content area with compact header
 st.markdown('''
@@ -171,6 +97,29 @@ if st.session_state.pending_faq_response:
     st.session_state.conversation_count += 1
     st.session_state.pending_faq_response = None
     st.rerun()
+
+# Handle FAQ questions from custom sidebar
+if st.session_state.messages:
+    last_message = st.session_state.messages[-1]
+    if last_message["role"] == "user" and not st.session_state.pending_faq_response:
+        # Check if this is an FAQ question
+        faq_questions = [
+            "كيف يمكنني حجز موعد؟",
+            "ما هي مواعيد الزيارة؟", 
+            "هل لديكم صيدلية؟",
+            "أين تقع المستشفى؟",
+            "ما هي التأمينات التي تقبلونها؟",
+            "ما هي أوقات العمل؟",
+            "ما هي العيادات المتوفرة؟",
+            "أريد طلب سيارة إسعاف"
+        ]
+        
+        if last_message["content"] in faq_questions:
+            # Generate static response for FAQ
+            static_response = generate_static_faq_response(last_message["content"], st.session_state.faq_data)
+            st.session_state.pending_faq_response = static_response
+            st.session_state.user_has_interacted = True
+            st.rerun()
 
 # Display chat messages
 for idx, message in enumerate(st.session_state.messages):

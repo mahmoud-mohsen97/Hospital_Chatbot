@@ -31,7 +31,7 @@ STREAMLIT_CONFIG = {
     "page_title": "🏥 Hospital Assistant AI Chatbot",
     "page_icon": "🏥",
     "layout": "wide",
-    "initial_sidebar_state": "expanded"
+    "initial_sidebar_state": "collapsed"
 }
 
 # LLM Configuration

@@ -22,7 +22,7 @@ def generate_static_faq_response(faq_question: str, faq_data: Dict[str, str]) ->
     # Return the answer directly from CSV without adding extra prompts
     return static_answer
 
-def is_follow_up_to_faq(messages: List[Dict], current_message: str) -> Dict[str, Any]:
+def is_follow_up_to_faq(messages: List[Dict], current_message: str) -> Dict[str, Any] | None:
     """
     Check if the current message is a follow-up to a recent FAQ.
     Returns FAQ context if it's a follow-up, None otherwise.
@@ -60,13 +60,13 @@ def create_pipeline_context(faq_question: str, faq_answer: str, user_followup: s
     static_part = faq_answer.split("\n\n🔹")[0] if "\n\n🔹" in faq_answer else faq_answer
     
     context = f"""
-    السياق: المستخدم سأل في البداية السؤال الشائع: "{faq_question}"
-    
-    الإجابة المعيارية للسؤال الشائع: {static_part}
-    
-    طلب المتابعة من المستخدم: {user_followup}
-    
-    يرجى تقديم إجابة مفصلة ومفيدة تبني على إجابة السؤال الشائع وتعالج طلب المستخدم المحدد. كن عملياً وقابلاً للتطبيق في إجابتك.
+    Context: The user initially asked the common question: "{faq_question}"
+
+    Standard answer to the common question: {static_part}
+
+    User's follow-up request: {user_followup}
+
+    Please provide a detailed and helpful answer that builds on the common question's answer and addresses the user's specific request. Be practical and actionable in your response.
     """
     return context
 
@@ -113,39 +113,55 @@ def apply_custom_css():
         /* Import compact, professional font */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
         
-        /* Fix Streamlit sidebar collapse icon - Replace Material Icons with SVG */
-        [data-testid="collapsedControl"] {
-            position: relative !important;
-            width: 40px !important;
-            height: 40px !important;
-            overflow: hidden !important;
+        /* Hide the hamburger menu (three dots) completely */
+        [data-testid="stToolbar"] {
+            display: none !important;
         }
         
-        /* Hide all text content */
-        [data-testid="collapsedControl"] * {
-            opacity: 0 !important;
-            font-size: 0 !important;
+        #MainMenu {
+            visibility: hidden !important;
+            display: none !important;
         }
         
-        /* Add custom SVG arrow icon */
-        [data-testid="collapsedControl"]::before {
-            content: "" !important;
-            position: absolute !important;
-            top: 50% !important;
-            left: 50% !important;
-            transform: translate(-50%, -50%) !important;
-            width: 20px !important;
-            height: 20px !important;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3E%3Cpath d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z'/%3E%3C/svg%3E") !important;
-            background-size: contain !important;
-            background-repeat: no-repeat !important;
-            background-position: center !important;
-            display: block !important;
-            z-index: 1000 !important;
+        .stApp [data-testid="stToolbar"] {
+            display: none !important;
         }
         
-        [data-testid="collapsedControl"]:hover::before {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z'/%3E%3C/svg%3E") !important;
+        /* Fix scrollbar position for RTL layout */
+        html {
+            direction: rtl !important;
+        }
+        
+        body {
+            direction: rtl !important;
+        }
+        
+        .stApp {
+            direction: rtl !important;
+        }
+        
+        /* Move scrollbar to left side */
+        ::-webkit-scrollbar {
+            width: 8px !important;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1 !important;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1 !important;
+            border-radius: 4px !important;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8 !important;
+        }
+        
+        /* For Firefox scrollbar positioning */
+        * {
+            scrollbar-width: thin !important;
+            scrollbar-color: #c1c1c1 #f1f1f1 !important;
         }
         
         /* RTL layout and base font */
@@ -153,12 +169,6 @@ def apply_custom_css():
             direction: rtl !important;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
             font-size: 14px !important;
-        }
-        
-        /* Compact sidebar width when expanded */
-        section[data-testid="stSidebar"]:not([aria-expanded="false"]) {
-            width: 250px !important;
-            min-width: 250px !important;
         }
         
         /* Main content area */
@@ -491,5 +501,459 @@ def apply_custom_css():
                 padding: 0.5rem 2.5rem 0.5rem 0.5rem !important;
             }
         }
+        
+        /* Resize main content to make room for sidebar */
+        .main {
+            margin-right: 280px !important;
+            transition: margin-right 0.3s ease !important;
+            width: calc(100% - 280px) !important;
+        }
+        
+        /* Adjust the app container */
+        .stApp > div {
+            margin-right: 280px !important;
+            transition: margin-right 0.3s ease !important;
+        }
+        
+        /* Ensure content containers resize properly */
+        section.main > div,
+        .block-container {
+            max-width: 100% !important;
+            padding-right: 1rem !important;
+            transition: all 0.3s ease !important;
+        }
     </style>
-    """, unsafe_allow_html=True) 
+    """, unsafe_allow_html=True)
+
+
+def show_custom_sidebar():
+    """Display a custom sidebar using Streamlit's native components."""
+    # Initialize sidebar state
+    if "show_custom_sidebar" not in st.session_state:
+        st.session_state.show_custom_sidebar = False
+    
+    # Create sidebar toggle button in top-left
+    col1, col2, col3 = st.columns([1, 10, 1])
+    with col1:
+        if st.button("☰", key="sidebar_toggle", help="افتح/أغلق القائمة الجانبية"):
+            st.session_state.show_custom_sidebar = not st.session_state.show_custom_sidebar
+    
+    # Show/hide sidebar based on state
+    if st.session_state.show_custom_sidebar:
+        # Style the native Streamlit sidebar
+        st.markdown("""
+        <style>
+        /* Show and style the Streamlit sidebar */
+        section[data-testid="stSidebar"] {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            width: 280px !important;
+            min-width: 280px !important;
+            max-width: 280px !important;
+            background-color: #ffffff !important;
+            border-left: 3px solid #1f77b4 !important;
+            box-shadow: -5px 0 20px rgba(0,0,0,0.4) !important;
+            z-index: 999999 !important;
+            position: fixed !important;
+            top: 0 !important;
+            right: 0 !important;
+            height: 100vh !important;
+            direction: rtl !important;
+            padding: 8px !important;
+            transform: translateX(0) !important;
+            transition: none !important;
+        }
+        
+        /* Force sidebar to expanded state */
+        section[data-testid="stSidebar"]:not([aria-expanded="false"]) {
+            width: 280px !important;
+            min-width: 280px !important;
+        }
+        
+        /* Override any collapsed styles */
+        section[data-testid="stSidebar"][aria-expanded="true"] {
+            width: 280px !important;
+            min-width: 280px !important;
+        }
+        
+        /* Hide the keyboard_double_arrow text and sidebar button */
+        section[data-testid="stSidebar"] button[data-testid="collapsedControl"] {
+            display: none !important;
+        }
+        
+        section[data-testid="stSidebar"] .css-1cypcdb {
+            display: none !important;
+        }
+        
+        section[data-testid="stSidebar"] .css-1d391kg .css-1cypcdb {
+            display: none !important;
+        }
+        
+        section[data-testid="stSidebar"] [data-testid="collapsedControl"] * {
+            display: none !important;
+        }
+        
+        /* Hide any text containing keyboard_double_arrow */
+        section[data-testid="stSidebar"] *:contains("keyboard_double_arrow") {
+            display: none !important;
+        }
+        
+        /* More aggressive hiding of collapse control elements */
+        section[data-testid="stSidebar"] .css-1544g2n {
+            display: none !important;
+        }
+        
+        section[data-testid="stSidebar"] .css-1lcbmhc .css-1cypcdb {
+            display: none !important;
+        }
+        
+        section[data-testid="stSidebar"] .css-17ziqus .css-1cypcdb {
+            display: none !important;
+        }
+        
+        /* Hide any element containing keyboard text */
+        section[data-testid="stSidebar"] span[data-testid*="keyboard"] {
+            display: none !important;
+        }
+        
+        section[data-testid="stSidebar"] div[data-testid*="keyboard"] {
+            display: none !important;
+        }
+        
+        /* Hide collapse button and its container */
+        section[data-testid="stSidebar"] > div > div:first-child {
+            display: none !important;
+        }
+        
+        /* Alternative approach - hide by content */
+        section[data-testid="stSidebar"] span:contains("keyboard") {
+            display: none !important;
+        }
+        
+        /* Hide the sidebar header area that contains the collapse button */
+        section[data-testid="stSidebar"] .css-1544g2n,
+        section[data-testid="stSidebar"] .css-1y4p8pa,
+        section[data-testid="stSidebar"] .css-1v3fvcr {
+            display: none !important;
+        }
+        
+        /* Ensure sidebar content is visible */
+        section[data-testid="stSidebar"] > div {
+            background-color: #ffffff !important;
+            height: 100% !important;
+            padding: 12px !important;
+            overflow-y: auto !important;
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+        
+        /* Force the sidebar container to full width */
+        section[data-testid="stSidebar"] .css-1d391kg {
+            width: 280px !important;
+            min-width: 280px !important;
+        }
+        
+        section[data-testid="stSidebar"] .css-1lcbmhc {
+            width: 280px !important;
+            min-width: 280px !important;
+        }
+        
+        section[data-testid="stSidebar"] .css-17ziqus {
+            width: 280px !important;
+            min-width: 280px !important;
+        }
+        
+        /* Style sidebar content */
+        section[data-testid="stSidebar"] .stMarkdown {
+            direction: rtl !important;
+            text-align: right !important;
+            color: #333333 !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        section[data-testid="stSidebar"] .stMarkdown p {
+            color: #333333 !important;
+            font-size: 13px !important;
+            line-height: 1.3 !important;
+            margin: 6px 0 !important;
+        }
+        
+        section[data-testid="stSidebar"] .stButton {
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        section[data-testid="stSidebar"] .stButton button {
+            width: 100% !important;
+            text-align: right !important;
+            direction: rtl !important;
+            margin: 4px 0 !important;
+            background-color: #ffffff !important;
+            border: 2px solid #e9ecef !important;
+            color: #333333 !important;
+            padding: 6px 10px !important;
+            border-radius: 5px !important;
+            font-size: 0.8rem !important;
+        }
+        
+        section[data-testid="stSidebar"] .stButton button:hover {
+            border-color: #1f77b4 !important;
+            background-color: #f8f9fa !important;
+            color: #1f77b4 !important;
+        }
+        
+        section[data-testid="stSidebar"] h1, 
+        section[data-testid="stSidebar"] h2, 
+        section[data-testid="stSidebar"] h3 {
+            color: #1f77b4 !important;
+            border-bottom: 2px solid #e9ecef !important;
+            padding-bottom: 6px !important;
+            margin: 12px 0 8px 0 !important;
+            font-weight: 600 !important;
+        }
+        
+        section[data-testid="stSidebar"] h1 {
+            font-size: 1.2rem !important;
+            text-align: center !important;
+        }
+        
+        section[data-testid="stSidebar"] h2 {
+            font-size: 1.0rem !important;
+        }
+        
+        /* Style expanders for RTL layout */
+        section[data-testid="stSidebar"] .streamlit-expanderHeader {
+            direction: rtl !important;
+            text-align: right !important;
+            background-color: #f8f9fa !important;
+            border: 1px solid #e9ecef !important;
+            border-radius: 5px !important;
+            padding: 6px 10px !important;
+            margin: 6px 0 !important;
+            font-size: 0.9rem !important;
+            font-weight: 600 !important;
+            color: #1f77b4 !important;
+        }
+        
+        section[data-testid="stSidebar"] .streamlit-expanderHeader:hover {
+            background-color: #e9ecef !important;
+            border-color: #1f77b4 !important;
+        }
+        
+        section[data-testid="stSidebar"] .streamlit-expanderContent {
+            direction: rtl !important;
+            text-align: right !important;
+            border: 1px solid #e9ecef !important;
+            border-top: none !important;
+            border-radius: 0 0 5px 5px !important;
+            padding: 8px !important;
+            background-color: #ffffff !important;
+            margin-bottom: 6px !important;
+        }
+        
+        section[data-testid="stSidebar"] .streamlit-expanderContent .stButton button {
+            font-size: 0.8rem !important;
+            padding: 5px 8px !important;
+            margin: 2px 0 !important;
+        }
+        
+        /* Add backdrop */
+        .main::before {
+            content: '' !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            background-color: rgba(0,0,0,0.3) !important;
+            z-index: 999998 !important;
+        }
+        
+        /* Ensure main content is pushed/dimmed when sidebar is open */
+        .main {
+            margin-right: 0 !important;
+            opacity: 0.7 !important;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+        
+        # JavaScript to force sidebar expansion
+        st.markdown("""
+        <script>
+        // Force sidebar to expanded state
+        setTimeout(function() {
+            const sidebar = document.querySelector('section[data-testid="stSidebar"]');
+            if (sidebar) {
+                // Force expanded state
+                sidebar.setAttribute('aria-expanded', 'true');
+                sidebar.style.width = '280px';
+                sidebar.style.minWidth = '280px';
+                sidebar.style.maxWidth = '280px';
+                
+                // Force inner content to full width
+                const sidebarContent = sidebar.querySelector('div');
+                if (sidebarContent) {
+                    sidebarContent.style.width = '100%';
+                    sidebarContent.style.minWidth = '100%';
+                }
+                
+                // Hide any collapse buttons
+                const collapseBtn = sidebar.querySelector('button[data-testid="collapsedControl"]');
+                if (collapseBtn) {
+                    collapseBtn.style.display = 'none';
+                }
+                
+                // Hide keyboard_double_arrow text more aggressively
+                const hideKeyboardText = function() {
+                    // Find and hide any element containing keyboard text
+                    const allElements = sidebar.querySelectorAll('*');
+                    allElements.forEach(function(element) {
+                        if (element.textContent && element.textContent.includes('keyboard')) {
+                            element.style.display = 'none';
+                        }
+                        if (element.innerHTML && element.innerHTML.includes('keyboard')) {
+                            element.style.display = 'none';
+                        }
+                    });
+                    
+                    // Specific selectors for keyboard elements
+                    const keyboardElements = sidebar.querySelectorAll('[data-testid*="keyboard"], [class*="keyboard"], span:contains("keyboard")');
+                    keyboardElements.forEach(function(element) {
+                        element.style.display = 'none';
+                    });
+                    
+                    // Hide the first div that typically contains the collapse button
+                    const firstDiv = sidebar.querySelector('div > div:first-child');
+                    if (firstDiv && firstDiv.querySelector('button')) {
+                        firstDiv.style.display = 'none';
+                    }
+                };
+                
+                // Run immediately and repeatedly
+                hideKeyboardText();
+                setInterval(hideKeyboardText, 500);
+            }
+        }, 100);
+        
+        // Also force expansion on any state changes
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'aria-expanded') {
+                    const sidebar = mutation.target;
+                    if (sidebar && sidebar.getAttribute('data-testid') === 'stSidebar') {
+                        sidebar.style.width = '280px';
+                        sidebar.style.minWidth = '280px';
+                        sidebar.style.maxWidth = '280px';
+                    }
+                }
+            });
+        });
+        
+        // Start observing
+        setTimeout(function() {
+            const sidebar = document.querySelector('section[data-testid="stSidebar"]');
+            if (sidebar) {
+                observer.observe(sidebar, { attributes: true, attributeFilter: ['aria-expanded'] });
+            }
+        }, 200);
+        </script>
+        """, unsafe_allow_html=True)
+        
+        # Use Streamlit's native sidebar
+        with st.sidebar:
+            # Close button at the top
+            col_close1, col_close2, col_close3 = st.columns([1, 7, 2])
+            with col_close3:
+                if st.button("✖", key="close_sidebar_top", help="إغلاق القائمة", type="secondary"):
+                    st.session_state.show_custom_sidebar = False
+                    st.rerun()
+            
+            # Sidebar title
+            st.markdown("# 🏥 معلومات المستشفى")
+            
+            # Quick access section (always visible)
+            st.markdown("## 💫 وصول سريع")
+            st.markdown("**📍 الموقع:** القاهرة")
+            st.markdown("**🚨 الطوارئ:** 123")
+            st.markdown("**🕒 الزيارات:** 9 صباحاً - 8 مساءً")
+            st.markdown("**💊 الصيدلية:** 8 صباحاً - 9 مساءً")
+            
+            st.markdown("---")
+            
+            # FAQ section as dropdown
+            with st.expander("📋 الأسئلة الشائعة", expanded=False):
+                faq_questions = [
+                    "كيف يمكنني حجز موعد؟",
+                    "ما هي مواعيد الزيارة؟", 
+                    "هل لديكم صيدلية؟",
+                    "أين تقع المستشفى؟",
+                    "ما هي التأمينات التي تقبلونها؟",
+                    "ما هي أوقات العمل؟",
+                    "ما هي العيادات المتوفرة؟",
+                    "أريد طلب سيارة إسعاف"
+                ]
+                
+                for question in faq_questions:
+                    if st.button(question, key=f"sidebar_faq_{question}", use_container_width=True):
+                        # Add the question to chat
+                        st.session_state.messages.append({
+                            "role": "user", 
+                            "content": question,
+                            "id": st.session_state.get("message_counter", 0) + 1
+                        })
+                        st.session_state.message_counter = st.session_state.get("message_counter", 0) + 1
+                        st.session_state.show_custom_sidebar = False  # Close sidebar
+                        st.rerun()
+            
+            # Hospital services as dropdown
+            with st.expander("🏥 خدمات المستشفى", expanded=False):
+                services = [
+                    "🚨 الرعاية الطارئة",
+                    "🔬 خدمات المختبر", 
+                    "📡 الأشعة",
+                    "👶 طب الأطفال",
+                    "🤱 قسم الولادة",
+                    "💊 الصيدلية",
+                    "🍽️ الكافتيريا"
+                ]
+                
+                for service in services:
+                    st.markdown(f"• {service}")
+            
+            # Contact information as dropdown
+            with st.expander("📞 معلومات الاتصال", expanded=False):
+                st.markdown("**📧 البريد:** info@hospital.com")
+                st.markdown("**📱 الهاتف:** 02 25256289")
+                st.markdown("**🌐 الموقع:** www.hospital.com")
+    else:
+        # Hide the sidebar when not needed
+        st.markdown("""
+        <style>
+        section[data-testid="stSidebar"] {
+            display: none !important;
+        }
+        
+        /* Return main content to full width when sidebar is closed */
+        .main {
+            margin-right: 0 !important;
+            transition: margin-right 0.3s ease !important;
+            width: 100% !important;
+        }
+        
+        /* Reset app container */
+        .stApp > div {
+            margin-right: 0 !important;
+            transition: margin-right 0.3s ease !important;
+        }
+        
+        /* Reset content containers */
+        section.main > div,
+        .block-container {
+            max-width: 100% !important;
+            padding-right: 1rem !important;
+            transition: all 0.3s ease !important;
+        }
+        </style>
+        """, unsafe_allow_html=True) 
