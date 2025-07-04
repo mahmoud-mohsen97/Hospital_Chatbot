@@ -1,75 +1,306 @@
-category,question,answer,Clinic / Specialty - العيادة / التخصص,Doctor's Name - اسم الطبيب,Consultation Fee (EGP) - سعر الكشف,Available Days - الأيام المتاحة,Appointments Times - المواعيد
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة امراض القلب المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة امراض القلب؟
-- كم سعر كشف امراض القلب ؟",,Cardiology - أمراض القلب,Dr. Ahmed Kamal / Dr. Laila Fouad - د. أحمد كمال / د. ليلى فؤاد,550 - 850 EGP,"Sunday, Tuesday, Thursday",10:00 AM - 2:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة جراحة العظام المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة جراحة العظام؟
-- كم سعر كشف جراحة العظام ؟",,Orthopedic Surgery - جراحة العظام,Dr. Khaled Mansour / Dr. Sara Gamal - د. خالد منصور / د. سارة جمال,500 - 800 EGP,"Monday, Wednesday",5:00 PM - 9:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة النساء والتوليد المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة النساء والتوليد؟
-- كم سعر كشف النساء والتوليد ؟",,Obstetrics & Gynecology - النساء والتوليد,Dr. Mona Said / Dr. Youssef Helmy - د. منى سعيد / د. يوسف حلمي,600 - 900 EGP,"Sunday, Wednesday",11:00 AM - 3:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الأطفال المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة الأطفال؟
-- كم سعر كشف الأطفال ؟",,Pediatrics - الأطفال,Dr. Nour El Din Ali / Dr. Heba Mahmoud - د. نور الدين علي / د. هبة محمود,450 - 700 EGP,"Tuesday, Thursday",4:00 PM - 8:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الأنف والأذن والحنجرة المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة الأنف والأذن والحنجرة؟
-- كم سعر كشف الأنف والأذن والحنجرة ؟",,"Ear, Nose & Throat (ENT) - الأنف والأذن والحنجرة",Dr. Tarek Zaki - د. طارق زكي,500 - 750 EGP,"Monday, Wednesday",9:00 AM - 1:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة العيون المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة العيون؟
-- كم سعر كشف العيون ؟",,Ophthalmology - العيون,Dr. Amira Reda - د. أميرة رضا,550 - 800 EGP,"Sunday, Tuesday",6:00 PM - 10:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الجلدية المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة الجلدية؟
-- كم سعر كشف الجلدية ؟",,Dermatology - الجلدية,Dr. Karim Hossam - د. كريم حسام,550 - 850 EGP,"Tuesday, Thursday, Saturday",10:00 AM - 2:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الجراحة العامة المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة الجراحة العامة؟
-- كم سعر كشف الجراحة العامة ؟",,General Surgery - الجراحة العامة,Dr. Rami Adel - د. رامي عادل,500 - 800 EGP,"Sunday, Wednesday",3:00 PM - 7:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة جراحة المخ والأعصاب المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة جراحة المخ والأعصاب؟
-- كم سعر كشف جراحة المخ والأعصاب ؟",,Neurosurgery - جراحة المخ والأعصاب,Dr. Nadine Sabry - د. نادين صبري,700 - 1000 EGP,"Monday, Wednesday",1:00 PM - 5:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة جراحة المسالك البولية المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة جراحة المسالك البولية؟
-- كم سعر كشف جراحة المسالك البولية ؟",,Urology - جراحة المسالك البولية,Dr. Sherif Mokhtar - د. شريف مختار,500 - 800 EGP,"Tuesday, Thursday",10:30 AM - 2:30 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة جراحة التجميل المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة جراحة التجميل؟
-- كم سعر كشف جراحة التجميل ؟",,Plastic Surgery - جراحة التجميل,Dr. Dina Salah - د. دينا صلاح,800 - 1200 EGP,"Sunday, Wednesday",4:30 PM - 8:30 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة أمراض الجهاز الهضمي والكبد المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة أمراض الجهاز الهضمي والكبد؟
-- كم سعر كشف أمراض الجهاز الهضمي والكبد ؟",,Gastroenterology & Hepatology - أمراض الجهاز الهضمي والكبد,Dr. Adel Mourad - د. عادل مراد,550 - 850 EGP,"Monday, Thursday",12:00 PM - 4:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة أمراض الغدد الصماء والسكري المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة أمراض الغدد الصماء والسكري؟
-- كم سعر كشف أمراض الغدد الصماء والسكري؟",,Endocrinology & Diabetes - أمراض الغدد الصماء والسكري,Dr. Salma Kamal - د. سلمى كمال,500 - 800 EGP,"Tuesday, Wednesday",5:00 PM - 9:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة أمراض الكلى المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة  أمراض الكلى؟
-- كم سعر كشف  أمراض الكلى؟",,Nephrology (Kidney) - أمراض الكلى,Dr. Maged Samir - د. ماجد سمير,500 - 750 EGP,"Sunday, Tuesday",1:00 PM - 5:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة أمراض الجهاز التنفسي المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة أمراض الجهاز التنفسي؟
-- كم سعر كشف أمراض الجهاز التنفسي؟",,Pulmonology (Respiratory) - أمراض الجهاز التنفسي,Dr. Yasmin El-Shenawy - د. ياسمين الشناوي,500 - 750 EGP,"Monday, Thursday",10:00 AM - 2:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الأسنان المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة الأسنان؟
-- كم سعر كشف الأسنان ؟",,Dentistry - الأسنان,Dr. Iyad Fahmy - د. إياد فهمي,350 - 550 EGP (for initial examination - للكشف المبدئي),"Sunday, Wednesday",9:00 AM - 1:00 PM
-Information about Clinic / Specialty - معلومات عن العيادة / التخصص,"- من هم دكاترة عيادة الطب الطبيعي والتأهيل المتاحين ؟
-- ما هي الأيام المتاحه و المواعيد لعيادة الطب الطبيعي والتأهيل؟
-- كم سعر كشف الطب الطبيعي والتأهيل ؟",,Physical Medicine & Rehabilitation - الطب الطبيعي والتأهيل,Dr. Alaa El Din - د. علاء الدين,400 - 650 EGP,"Tuesday, Thursday",3:00 PM - 7:00 PM
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Appendectomy surgeries?
- -  أود معرفة تكلفة عملية استئصال الزائدة الدودية لديكم؟",,استئصال الزائدة الدودية / Appendectomy,,"35,000 - 65,000 EGP",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Tonsillectomy surgeries?
- -  أود معرفة تكلفة عملية استئصال اللوزتين لديكم؟",,استئصال اللوزتين / Tonsillectomy,,"25,000 - 45,000 EGP",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Cesarean Section (C-Section) surgeries?
- -  أود معرفة تكلفة عملية الولادة القيصرية لديكم؟",,الولادة القيصرية / Cesarean Section (C-Section),,"40,000 - 80,000 EGP",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Laparoscopic Cholecystectomy surgeries?
- -  أود معرفة تكلفة عملية استئصال المرارة بالمنظار لديكم؟",,استئصال المرارة بالمنظار / Laparoscopic Cholecystectomy (Gallbladder Removal),,"60,000 - 100,000 EGP",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Laparoscopic Inguinal Hernia Repair surgeries?
- -  أود معرفة تكلفة عملية إصلاح الفتق الإربي لديكم؟",,إصلاح الفتق الإربي (بالمنظار) / Laparoscopic Inguinal Hernia Repair,,"50,000 - 90,000 EGP",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Cataract surgeries?
- -  أود معرفة تكلفة عملية المياه البيضاء (إزالة إعتام عدسة العين) لديكم؟",,عملية المياه البيضاء (إزالة إعتام عدسة العين) / Cataract Surgery,,"30,000 - 55,000 EGP (للعين الواحدة)",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Knee Arthroscopy surgeries?
- -  أود معرفة تكلفة عملية منظار الركبة (لتشخيص أو إصلاح بسيط) لديكم؟",,منظار الركبة (لتشخيص أو إصلاح بسيط) / Knee Arthroscopy (for diagnosis or minor repair),,"55,000 - 95,000 EGP",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Simple Breast Tumor Excision surgeries?
- -  أود معرفة تكلفة عملية استئصال ورم بسيط بالثدي لديكم؟",,عملية استئصال ورم بسيط بالثدي / Simple Breast Tumor Excision,,"70,000 - 120,000 EGP",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Simple Fracture Fixation (with surgical tools) surgeries?
- -  أود معرفة تكلفة عملية تثبيت كسر بسيط (بالأدوات الجراحية) لديكم؟",,تثبيت كسر بسيط (بالأدوات الجراحية) / Simple Fracture Fixation (with surgical tools),,"60,000 - 110,000 EGP",,
-أسعار العمليات Surgery Prices,"- I would like to know the cost of your Adenoidectomy for Children surgeries?
- -  أود معرفة تكلفة عملية عملية اللحمية للأطفال لديكم؟",,عملية اللحمية للأطفال / Adenoidectomy for Children,,"20,000 - 40,000 EGP (قابلة للتغيير حسب رأي الطبيب المختص)",,
+Category,Question,Answer
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,ماهي العيادات / التخصصات المتاحة لديكم؟ ?What clinics/specialties do you have available,"قسم الطوارئ (Emergency Department)
+عيادة الباطنة (Internal Medicine Clinic)
+عيادة القلب والأوعية الدموية (Cardiology & Vascular Clinic)
+عيادة الجهاز الهضمي والمناظير (Gastroenterology & Endoscopy Clinic)
+عيادة العظام والمفاصل (Orthopedics & Joints Clinic)
+عيادة النساء والتوليد (Obstetrics & Gynecology Clinic)
+عيادة الأطفال وحديثي الولادة (Pediatrics & Neonatology Clinic)
+عيادة المسالك البولية (Urology Clinic)
+عيادة الجلدية والتجميل والليزر (Dermatology, Aesthetics & Laser Clinic)
+عيادة الأنف والأذن والحنجرة (ENT Clinic)
+عيادة الطب النفسي (Psychiatry Clinic)
+عيادة المخ والأعصاب (Neurology Clinic)
+قسم الأشعة (Radiology Department)
+قسم التحاليل الطبية (Medical Laboratories)
+وحدات العناية المركزة (Intensive Care Units - ICUs)"
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن قسم الطوارئ Give me information about the emergency department,"قسم الطوارئ لدينا يعمل على مدار الساعة طوال أيام الأسبوع، ومجهز بالكامل لاستقبال جميع الحالات الطارئة وتقديم الرعاية الأولية الفورية. 
+ . Our Emergency Department operates 24/7, fully equipped to receive all emergency cases and provide immediate primary care
+ "
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة الباطنة. Give me information about the internal medicine clinic,"عيادة الباطنة (Internal Medicine Clinic) عيادة الباطنة لدينا متخصصة في التشخيص الدقيق والعلاج المتقدم للأمراض غير الجراحية المعقدة والمزمنة لدى البالغين. يركز أطباؤنا على توفير رعاية صحية شاملة تشمل إدارة حالات مثل السكري، ارتفاع ضغط الدم، أمراض الجهاز الهضمي، اضطرابات الغدد الصماء، أمراض الكلى غير الجراحية، وأمراض الدم. نهدف إلى التحكم الفعال في الأمراض المزمنة وتعزيز الصحة الوقائية، باستخدام أحدث البروتوكولات العلاجية. 
+ Our Internal Medicine Clinic specializes in the accurate diagnosis and advanced treatment of complex and chronic non-surgical diseases in adults. Our physicians focus on providing comprehensive healthcare, including managing conditions such as diabetes, hypertension, advanced gastrointestinal disorders, endocrine imbalances, non-surgical kidney diseases, and blood disorders. We aim for effective chronic disease management and preventive health promotion, utilizing the latest treatment protocols"
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة القلب والأوعية الدموية Give me information about the Cardiology & Vascular Clinic.," عيادة القلب والأوعية الدموية (Cardiology & Vascular Clinic) تُعنى عيادة القلب والأوعية الدموية بالصحة الكاملة لقلبك وشرايينك. نقدم خدمات تشخيصية وعلاجية متكاملة لأمراض مثل: قصور الشريان التاجي، الذبحة الصدرية، اضطرابات نظم القلب (عدم انتظام ضربات القلب)، ارتفاع ضغط الدم الشرياني، أمراض صمامات القلب، وفشل القلب. نستخدم أحدث التقنيات مثل: تخطيط القلب الكهربائي (ECG)، إيكو القلب (Echocardiography) ثلاثي ورباعي الأبعاد، اختبارات الإجهاد (Stress Tests)، ومراقبة هولتر للقلب. كما نقدم استشارات حول الوقاية من أمراض القلب وتعديل عوامل الخطر، بالإضافة إلى متابعة ما بعد القسطرة وجراحات القلب.
+ Our Cardiology & Vascular Clinic is dedicated to the complete health of your heart and arteries. We offer comprehensive diagnostic and treatment services for conditions such as: coronary artery disease, angina, cardiac arrhythmias, arterial hypertension, heart valve diseases, and heart failure. We utilize the latest technologies including: Electrocardiogram (ECG), 3D/4D Echocardiography, Stress Tests, and Holter monitoring. We also provide consultations on heart disease prevention and risk factor modification, in addition to post-catheterization and cardiac surgery follow-up."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة الجهاز الهضمي والمناظير Give me information about the Gastroenterology & Endoscopy Clinic,"عيادة الجهاز الهضمي والمناظير (Gastroenterology & Endoscopy Clinic) تتخصص هذه العيادة في تشخيص وعلاج جميع أمراض الجهاز الهضمي، الكبد، والبنكرياس. تشمل الحالات التي نتعامل معها: قرحة المعدة والاثني عشر، ارتجاع المريء، القولون العصبي، التهابات القولون، حصوات المرارة، أمراض الكبد (مثل التهاب الكبد الفيروسي وتليف الكبد)، والتهاب البنكرياس. نتميز بتوفر أحدث أجهزة المناظير التشخيصية والعلاجية (منظار علوي وسفلي)، والتي تمكننا من الكشف المبكر عن الأورام، إزالة الزوائد اللحمية، ووقف النزيف الهضمي بدقة عالية. 
+ This clinic specializes in the diagnosis and treatment of all diseases of the digestive system, liver, and pancreas. Conditions we manage include: stomach and duodenal ulcers, GERD, irritable bowel syndrome, colitis, gallstones, liver diseases (e.g., viral hepatitis and cirrhosis), and pancreatitis. We are distinguished by the availability of the latest diagnostic and therapeutic endoscopy equipment (upper and lower endoscopy), which enables us to detect tumors early, remove polyps, and stop gastrointestinal bleeding with high precision."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة العظام والمفاصل Give me information about the Orthopedics & Joints Clinic,"عيادة العظام والمفاصل (Orthopedics & Joints Clinic) تقدم عيادة العظام والمفاصل رعاية متكاملة لمجموعة واسعة من الحالات المتعلقة بالجهاز العضلي الهيكلي. تشمل خدماتنا: تشخيص وعلاج كسور العظام، إصابات المفاصل والأربطة (مثل إصابات الرباط الصليبي)، خشونة المفاصل (خاصة الركبة والفخذ)، آلام الظهر والرقبة، الانزلاق الغضروفي، تشوهات العظام، وأورام العظام. نوفر أحدث التقنيات الجراحية مثل جراحات استبدال المفاصل (الركبة والفخذ)، جراحات العمود الفقري، والمناظير المفصلية. كما نقدم برامج متكاملة للعلاج الطبيعي والتأهيل بعد العمليات الجراحية لضمان استعادة كاملة للوظيفة والحركة.  
+ The Orthopedics & Joints Clinic provides comprehensive care for a wide range of musculoskeletal conditions. Our services include: diagnosis and treatment of bone fractures, joint and ligament injuries (e.g., ACL injuries), joint osteoarthritis (especially knee and hip), back and neck pain, disc herniation, bone deformities, and bone tumors. We offer the latest surgical techniques such as joint replacement surgeries (knee and hip), spinal surgeries, and arthroscopy. We also provide integrated physical therapy and rehabilitation programs post-surgery to ensure full restoration of function and mobility."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة النساء والتوليد Give me information about the Obstetrics & Gynecology Clinic,"عيادة النساء والتوليد (Obstetrics & Gynecology Clinic) تُعنى عيادة النساء والتوليد بتقديم رعاية صحية شاملة ومتكاملة للمرأة في جميع مراحل حياتها. تشمل خدماتنا: متابعة الحمل الدورية (منذ بدايته وحتى الولادة)، الولادة الطبيعية والقيصرية بأعلى معايير الأمان، رعاية ما بعد الولادة، تشخيص وعلاج أمراض النساء المختلفة (مثل تكيس المبايض، الأورام الليفية، التهابات الجهاز التناسلي، واضطرابات الدورة الشهرية)، الكشف المبكر عن سرطان عنق الرحم والثدي، واستشارات تنظيم الأسرة والعقم. نستخدم أجهزة سونار متطورة (ثلاثية ورباعية الأبعاد) لمتابعة نمو الجنين وصحة الأم. 
+ The Obstetrics & Gynecology Clinic is dedicated to providing comprehensive and integrated healthcare for women at all stages of their lives. Our services include: regular pregnancy follow-up (from conception to delivery), natural and C-section deliveries with the highest safety standards, postpartum care, diagnosis and treatment of various gynecological conditions (e.g., PCOS, fibroids, reproductive tract infections, and menstrual disorders), early detection of cervical and breast cancer, and family planning and infertility consultations. We utilize advanced ultrasound devices (3D and 4D) to monitor fetal growth and maternal health"
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة الأطفال وحديثي الولادة Give me information about the Pediatrics & Neonatology Clinic,"عيادة الأطفال وحديثي الولادة (Pediatrics & Neonatology Clinic) تقدم عيادة الأطفال وحديثي الولادة رعاية صحية متخصصة ومتكاملة لفلذات أكبادنا، منذ لحظة الولادة وحتى سن المراهقة. تشمل خدماتنا: متابعة النمو والتطور الطبيعي للأطفال، برنامج التطعيمات الروتينية، تشخيص وعلاج الأمراض الشائعة (مثل نزلات البرد، الإنفلونزا، التهابات الجهاز التنفسي والهضمي)، إدارة حالات الربو والحساسية، واضطرابات التغذية. كما نضم وحدة عناية مركزة لحديثي الولادة (NICU) مجهزة بأحدث الأجهزة وفريق متخصص لتقديم الرعاية الفائقة للأطفال المبتسرين أو الذين يعانون من مشاكل صحية عند الولادة، لضمان أفضل بداية لحياة صحية. 
+ The Pediatrics & Neonatology Clinic provides specialized and comprehensive healthcare for our beloved children, from birth through adolescence. Our services include: monitoring normal growth and development, routine vaccination programs, diagnosis and treatment of common illnesses (e.g., colds, flu, respiratory and digestive infections), management of asthma and allergies, and nutritional disorders. We also feature a Neonatal Intensive Care Unit (NICU) equipped with the latest devices and a specialized team to provide advanced care for premature infants or those with health issues at birth, ensuring the best start for a healthy life"
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة المسالك البولية Give me information about the Urology Clinic,"عيادة المسالك البولية (Urology Clinic)  تتخصص عيادة المسالك البولية في تشخيص وعلاج أمراض الجهاز البولي والتناسلي للرجال والنساء. تشمل الحالات التي نتعامل معها: حصوات الكلى والحالب والمثانة (مع توفر تقنيات تفتيت الحصوات بالليزر)، التهابات المسالك البولية المتكررة، تضخم البروستاتا الحميد، أورام الجهاز البولي (الكلى، المثانة، البروستاتا)، سلس البول، والعقم عند الرجال. يقدم أطباؤنا حلولاً علاجية جراحية وغير جراحية، بما في ذلك الجراحات بالمنظار لضمان تعافٍ أسرع وأقل ألماً. 
+ The Urology Clinic specializes in the diagnosis and treatment of diseases of the urinary and reproductive systems in men and women. Conditions we manage include: kidney, ureteral, and bladder stones (with laser lithotripsy available), recurrent urinary tract infections, benign prostatic hyperplasia, urinary tract tumors (kidney, bladder, prostate), urinary incontinence, and male infertility. Our physicians offer both surgical and non-surgical treatment solutions, including laparoscopic surgeries for faster recovery and less pain."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,"اعطني معلومات عن عيادة الجلدية والتجميل والليزر Give me information about the Dermatology, Aesthetics & Laser Clinic","عيادة الجلدية والتجميل والليزر (Dermatology, Aesthetics & Laser Clinic) تقدم عيادة الجلدية والتجميل والليزر رعاية متكاملة لصحة وجمال بشرتك وشعرك وأظافرك. تشمل خدماتنا الطبية: تشخيص وعلاج الأمراض الجلدية المزمنة والحادة (مثل حب الشباب، الإكزيما، الصدفية، الأمراض الفطرية)، تساقط الشعر، والتهابات الجلد. بالإضافة إلى ذلك، نوفر مجموعة واسعة من الإجراءات التجميلية المتقدمة باستخدام أحدث التقنيات: حقن البوتوكس والفيلر لعلاج التجاعيد وتحسين ملامح الوجه، جلسات الليزر لإزالة الشعر وتجديد البشرة وعلاج التصبغات وآثار حب الشباب، وتقشير البشرة الكيميائي والكريستالي. نهدف إلى تحقيق أفضل النتائج الجمالية مع الحفاظ على صحة البشرة. 
+ The Dermatology, Aesthetics & Laser Clinic provides comprehensive care for the health and beauty of your skin, hair, and nails. Our medical services include: diagnosis and treatment of chronic and acute skin diseases (e.g., acne, eczema, psoriasis, fungal infections), hair loss, and skin infections. In addition, we offer a wide range of advanced aesthetic procedures using the latest technologies: Botox and filler injections for wrinkle treatment and facial contouring, laser sessions for hair removal, skin rejuvenation, treating pigmentation and acne scars, and chemical and crystal peels. We aim to achieve the best aesthetic results while maintaining skin health."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة الأنف والأذن والحنجرة  Give me information about the ENT Clinic,"عيادة الأنف والأذن والحنجرة (ENT Clinic) تتخصص عيادة الأنف والأذن والحنجرة في تشخيص وعلاج جميع الأمراض المتعلقة بهذه الأجهزة الحيوية. تشمل خدماتنا: مشاكل السمع والطنين، التهابات الأذن المزمنة والحادة، التهاب الجيوب الأنفية المزمن، لحمية الأنف، انحراف الحاجز الأنفي، التهاب اللوزتين واللحمية (خاصة لدى الأطفال)، مشاكل الصوت والبلع، وأورام الرأس والرقبة. نوفر أحدث أجهزة الفحص بالمنظار لتشخيص دقيق، ونجري العمليات الجراحية اللازمة لضمان تحسين وظائف السمع والتنفس والبلع.  
+ The ENT Clinic specializes in the diagnosis and treatment of all diseases related to these vital organs. Our services include: hearing problems and tinnitus, chronic and acute ear infections, chronic sinusitis, nasal polyps, deviated nasal septum, tonsillitis and adenoiditis (especially in children), voice and swallowing problems, and head and neck tumors. We provide the latest endoscopic examination equipment for accurate diagnosis and perform necessary surgical procedures to ensure improved hearing, breathing, and swallowing functions."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة المخ والأعصاب؟  ?Give me information about theNeurology Clinic,"عيادة المخ والأعصاب (Neurology Clinic) تتخصص عيادة المخ والأعصاب في تشخيص وعلاج أمراض الجهاز العصبي والدماغ والعمود الفقري. نقدم رعاية شاملة لحالات مثل: السكتات الدماغية، الصرع، الصداع المزمن، الشلل الرعاش، التصلب المتعدد، اضطرابات الذاكرة، وآلام الظهر والرقبة. نستخدم أحدث التقنيات لتقديم أفضل رعاية عصبية، بهدف تحسين جودة حياة المرضى واستعادة وظائفهم. The Neurology Clinic specializes in diagnosing and treating diseases of the nervous system, brain, and spine. We offer comprehensive care for conditions including: strokes, epilepsy, chronic headaches, Parkinson's disease, multiple sclerosis, memory disorders, and back and neck pain. Utilizing the latest technologies, our goal is to enhance patients' quality of life and restore their functions."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن عيادة الطب النفسي؟ ?Give me information about the Psychiatry Clinic,"عيادة الطب النفسي (Psychiatry Clinic) تتخصص عيادة الطب النفسي في تشخيص وعلاج الاضطرابات والمشاكل النفسية والسلوكية والعاطفية. نعمل على مساعدتك في استعادة توازنك النفسي وتحسين جودة حياتك. تشمل خدماتنا: الاكتئاب، القلق، اضطرابات المزاج والنوم، اضطرابات الأكل، الوسواس القهري، والتعامل مع الضغوط النفسية. نوفر أحدث طرق التشخيص والعلاج، بما في ذلك العلاجات الدوائية والجلسات النفسية المتخصصة مثل العلاج السلوكي المعرفي (CBT)، لضمان شفائك والعودة لحياة أكثر استقراراً وسعادة. The Psychiatry Clinic specializes in diagnosing and treating mental, behavioral, and emotional disorders and problems. We help you restore your psychological balance and improve your quality of life. Our services include: depression, anxiety, mood and sleep disorders, eating disorders, OCD, and coping with psychological stress. We provide the latest diagnostic and treatment methods, including medication and specialized psychotherapy sessions like CBT, to ensure your recovery and a return to a more stable and happier life."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن قسم الأشعة Give me information about the Radiology Department,"قسم الأشعة (Radiology Department) قسم الأشعة لدينا مجهز بأحدث أجهزة التصوير الطبي لتقديم تشخيص دقيق وسريع. تشمل خدماتنا: الأشعة السينية (X-Ray)، الأشعة المقطعية (CT Scan) متعددة الشرائح، الرنين المغناطيسي (MRI) عالي الدقة، الموجات فوق الصوتية (Ultrasound)، وأشعة الدوبلر الملونة. تُستخدم هذه التقنيات لتصوير جميع أجزاء الجسم، بما في ذلك العظام، الأعضاء الداخلية، الأوعية الدموية، والأنسجة الرخوة، مما يساعد الأطباء في مختلف التخصصات على وضع خطط علاجية فعالة ومتابعة تطور الحالات بدقة. 
+ Our Radiology Department is equipped with the latest medical imaging devices to provide accurate and rapid diagnosis. Our services include: X-Ray, multi-slice CT Scan, high-resolution MRI, Ultrasound, and Color Doppler. These technologies are used to image all parts of the body, including bones, internal organs, blood vessels, and soft tissues, helping physicians across various specialties to develop effective treatment plans and precisely monitor the progression of conditions."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن قسم التحاليل الطبية Give me information about the Medical Laboratoriest,"قسم التحاليل الطبية (Medical Laboratories) يقدم قسم التحاليل الطبية لدينا مجموعة شاملة من الاختبارات المعملية الدقيقة التي تعتبر حجر الزاوية في التشخيص والعلاج الحديث. تشمل خدماتنا: تحاليل الدم الشاملة، تحاليل وظائف الكلى والكبد، تحاليل السكري، تحاليل الهرمونات، تحاليل الفيتامينات، تحاليل الأمراض المعدية، تحاليل الأورام، وتحاليل البول والبراز. نلتزم بأعلى معايير الجودة والدقة في جميع الفحوصات لضمان نتائج موثوقة تساعد الأطباء على اتخاذ القرارات العلاجية الصحيحة ومتابعة استجابة المريض للعلاج. 
+ Our Medical Laboratories department offers a comprehensive range of accurate laboratory tests that are the cornerstone of modern diagnosis and treatment. Our services include: complete blood count, kidney and liver function tests, diabetes tests, hormone tests, vitamin tests, infectious disease tests, tumor markers, and urine and stool analyses. We adhere to the highest quality and accuracy standards in all examinations to ensure reliable results that help physicians make correct treatment decisions and monitor patient response to therapy."
+معلومات عن العيادة / التخصص - Information about Clinic / Specialty,اعطني معلومات عن وحدات العناية المركزة  Give me information about the Intensive Care Units - ICUs,"وحدات العناية المركزة (Intensive Care Units - ICUs) توفر مستشفانا وحدات عناية مركزة متخصصة ومجهزة بأحدث الأجهزة لدعم الحياة، بما في ذلك: العناية المركزة العامة (General ICU)، العناية المركزة للقلب (Cardiac ICU)، ووحدة العناية المركزة لحديثي الولادة (NICU). يعمل في هذه الوحدات فريق طبي وتمريضي مؤهل ومدرب على أعلى مستوى، متخصص في رعاية الحالات الحرجة التي تتطلب مراقبة مستمرة ودقيقة، دعمًا للتنفس، وظائف القلب، والكلى. نلتزم بتقديم رعاية فائقة الجودة لضمان استقرار حالة المرضى الحرجة وتحسين فرص تعافيهم. 
+ Our hospital provides specialized intensive care units equipped with the latest life support devices, including: General ICU, Cardiac ICU, and Neonatal Intensive Care Unit (NICU). These units are staffed by a highly qualified and trained medical and nursing team specializing in critical care that requires continuous and precise monitoring, respiratory support, cardiac function, and kidney function. We are committed to providing superior quality care to ensure the stability of critically ill patients and improve their chances of recovery."
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the Internal Medicine Clinic? ما هي المواعيد في عيادة  الباطنة؟,"د. محمود كمال (Dr. Mahmoud Kamal)
+الأحد، الثلاثاء، الخميس: 10:00 صباحًا - 3:00 مساءً 
+ Sunday, Tuesday, Thursday: 10:00 AM - 3:00 PM
+د. إيناس فكري (Dr. Enas Fekry)
+الاثنين، الأربعاء: 2:00 ظهرًا - 7:00 مساءً 
+ الجمعة: 10:00 صباحًا - 2:00 ظهرًا 
+ Monday, Wednesday: 2:00 PM - 7:00 PM 
+ Friday: 10:00 AM - 2:00 PM
+د. هشام زكي (Dr. Hisham Zaki)
+السبت، الإثنين، الأربعاء: 9:00 صباحًا - 2:00 ظهرًا 
+ Saturday, Monday, Wednesday: 9:00 AM - 2:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the ICardiology & Vascular Clinic ? ما هي المواعيد في عيادة القلب والأوعية الدموية؟,"د. عادل حسان (Dr. Adel Hassan)
+الأحد، الثلاثاء، الخميس: 11:00 صباحًا - 4:00 مساءً 
+ Sunday, Tuesday, Thursday: 11:00 AM - 4:00 PM
+د. مروة جمال (Dr. Marwa Gamal)
+الاثنين، الأربعاء: 1:00 ظهرًا - 6:00 مساءً 
+ Monday, Wednesday: 1:00 PM - 6:00 PM
+د. خالد نور (Dr. Khaled Nour)
+السبت، الأحد، الثلاثاء: 9:00 صباحًا - 1:00 ظهرًا 
+ Saturday, Sunday, Tuesday: 9:00 AM - 1:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the Gastroenterology & Endoscopy Clinic? ما هي المواعيد في عيادة الجهاز الهضمي والمناظير؟,"د. شريف منصور (Dr. Sherif Mansour)
+الأحد، الثلاثاء: 9:00 صباحًا - 2:00 ظهرًا 
+ الأربعاء: 3:00 مساءً - 8:00 مساءً 
+ Sunday, Tuesday: 9:00 AM - 2:00 PM 
+ Wednesday: 3:00 PM - 8:00 PM
+د. ريهام صبري (Dr. Reham Sabry)
+الاثنين، الخميس: 10:00 صباحًا - 3:00 مساءً 
+ Monday, Thursday: 10:00 AM - 3:00 PM
+د. وائل فريد (Dr. Wael Farid)
+السبت، الأربعاء: 4:00 مساءً - 9:00 مساءً 
+ Saturday, Wednesday: 4:00 PM - 9:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the Orthopedics & Joints Clinic? ما هي المواعيد في عيادة العظام والمفاصل؟,"د. أيمن السعدني (Dr. Ayman El-Saadany)
+الاثنين، الأربعاء: 11:00 صباحًا - 4:00 مساءً 
+ Monday, Wednesday: 11:00 AM - 4:00 PM
+د. ليلى أمين (Dr. Leila Amin)
+الأحد، الخميس: 2:00 ظهرًا - 7:00 مساءً 
+ Sunday, Thursday: 2:00 PM - 7:00 PM
+د. طارق البدري (Dr. Tarek El-Badry)
+السبت، الثلاثاء، الأربعاء: 9:00 صباحًا - 1:00 ظهرًا 
+ Saturday, Tuesday, Wednesday: 9:00 AM - 1:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the Obstetrics & Gynecology Clinic? ما هي المواعيد في عيادة النساء والتوليد؟,"د. نسرين علام (Dr. Nesrine Allam)
+الأحد، الثلاثاء، الخميس: 1:00 ظهرًا - 6:00 مساءً 
+ Sunday, Tuesday, Thursday: 1:00 PM - 6:00 PM
+د. ياسمين الشاذلي (Dr. Yasmin El-Shazly)
+الاثنين، الأربعاء: 9:00 صباحًا - 2:00 ظهرًا 
+ Monday, Wednesday: 9:00 AM - 2:00 PM
+د. مجدي رزق (Dr. Magdy Rizk)
+السبت، الأحد: 4:00 مساءً - 9:00 مساءً 
+ Saturday, Sunday: 4:00 PM - 9:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the Pediatrics & Neonatology Clinic? ما هي المواعيد في عيادة الأطفال وحديثي الولادة؟,"د. منى رفعت (Dr. Mona Refaat)
+الأحد، الإثنين، الأربعاء: 10:00 صباحًا - 3:00 مساءً 
+ Sunday, Monday, Wednesday: 10:00 AM - 3:00 PM
+د. كريم مختار (Dr. Karim Mokhtar)
+الثلاثاء، الخميس: 1:00 ظهرًا - 6:00 مساءً 
+ Tuesday, Thursday: 1:00 PM - 6:00 PM
+د. سارة عيسى (Dr. Sara Eissa)
+السبت: 11:00 صباحًا - 4:00 مساءً 
+ Saturday: 11:00 AM - 4:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the Urology Clinic? ما هي المواعيد في عيادة المسالك البولية ؟,"د. أحمد سامي (Dr. Ahmed Samy)
+الاثنين، الأربعاء، الخميس: 10:00 صباحًا - 3:00 مساءً 
+ Monday, Wednesday, Thursday: 10:00 AM - 3:00 PM
+د. هبة عبد الرحمن (Dr. Heba Abdelrahman)
+الأحد، الثلاثاء: 2:00 ظهرًا - 7:00 مساءً 
+ Sunday, Tuesday: 2:00 PM - 7:00 PM
+د. محمد فؤاد (Dr. Mohamed Fouad)
+السبت، الثلاثاء: 9:00 صباحًا - 1:00 ظهرًا 
+ Saturday, Tuesday: 9:00 AM - 1:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),"What are the appointments in the Dermatology, Aesthetics & Laser Clinic? ما هي المواعيد في عيادة الجلدية والتجميل والليزر؟","د. ريم مصطفى (Dr. Reem Mostafa)
+الأحد، الأربعاء: 12:00 ظهرًا - 5:00 مساءً 
+ Sunday, Wednesday: 12:00 PM - 5:00 PM
+د. حسام عابد (Dr. Hussam Abed)
+الاثنين، الخميس: 3:00 مساءً - 8:00 مساءً 
+ Monday, Thursday: 3:00 PM - 8:00 PM
+د. نوران الشناوي (Dr. Nouran El-Shennawy)
+السبت، الثلاثاء: 10:00 صباحًا - 3:00 مساءً 
+ Saturday, Tuesday: 10:00 AM - 3:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the ENT Clinic? ما هي المواعيد في عيادة الأنف والأذن والحنجرة؟,"د. شريف عزت (Dr. Sherif Ezzat)
+الأحد، الثلاثاء: 9:00 صباحًا - 2:00 ظهرًا 
+ Sunday, Tuesday: 9:00 AM - 2:00 PM
+د. دينا مجدي (Dr. Dina Magdy)
+الاثنين، الأربعاء: 1:00 ظهرًا - 6:00 مساءً 
+ Monday, Wednesday: 1:00 PM - 6:00 PM
+د. عمر سليم (Dr. Omar Selim)
+الخميس، السبت: 11:00 صباحًا - 4:00 مساءً 
+ Thursday, Saturday: 11:00 AM - 4:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),ما هي المواعيد في عيادة المخ والاعصاب؟ ?What are the appointment times for the Neurology Clinic,"د. كريم فؤاد (Dr. Karim Fouad)
+الأحد، الثلاثاء، الخميس: 10:00 صباحًا - 3:00 مساءً | Sunday, Tuesday, Thursday: 10:00 AM - 3:00 PM
+د. نوران محمود (Dr. Nourhan Mahmoud)
+الاثنين، الأربعاء: 4:00 مساءً - 8:00 مساءً | Monday, Wednesday: 4:00 PM - 8:00 PM
+د. يوسف طارق (Dr. Yousef Tarek)
+السبت: 11:00 صباحًا - 5:00 مساءً | Saturday: 11:00 AM - 5:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),ما هي المواعيد في عيادة الطب النفسي ?What are the appointment times for the psychiatry clinic,"د. ليلى فخري (Dr. Laila Fakhry)
+الأحد، الثلاثاء: 10:00 صباحًا - 4:00 مساءً | Sunday, Tuesday: 10:00 AM - 4:00 PM
+د. خالد عثمان (Dr. Khaled Osman)
+الاثنين، الأربعاء، الخميس: 5:00 مساءً - 9:00 مساءً | Monday, Wednesday, Thursday: 5:00 PM - 9:00 PM
+د. سارة جمال (Dr. Sara Gamal)
+السبت: 11:00 صباحًا - 3:00 مساءً | Saturday: 11:00 AM - 3:00 PM"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),Who are the doctors in the radiology department? من هم الاطباء في قسم الاشعة ؟,"استشاري أشعة تشخيصية (Diagnostic Radiology Consultant)
+د. كريم فتحي (Dr. Karim Fathy)
+أخصائي أشعة (Radiology Specialist)
+د. نورا حسني (Dr. Nora Hosny)
+فني أشعة أول (Senior Radiology Technologist)
+أ. حسام عادل (Mr. Hussam Adel)"
+معلومات عن العيادة / التخصص ( الدكاتره و المواعيد) - Information about Clinic / Specialty (doctors and Appointments),What are the appointments in the Medical Laboratories Department? من هم الاطباء في قسم التحاليل الطبية (المعمل)؟,"استشاري تحاليل طبية/باثولوجيا إكلينيكية (Clinical Pathology Consultant)
+د. عبير محمود (Dr. Abeer Mahmoud)
+أخصائي تحاليل طبية (Medical Analysis Specialist)
+د. زياد طارق (Dr. Ziad Tarek)
+أخصائي ميكروبيولوجيا طبية (Medical Microbiology Specialist)
+د. نهى سليمان (Dr. Noha Soliman)
+فني مختبر أول (Senior Lab Technologist)
+أ. مروان جمال (Mr. Marwan Gamal)"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the internal medicine clinic? ماهي اسعار عيادة الباطنة؟,"د. محمود كمال (Dr. Mahmoud Kamal)
+650 جنيه مصري / 650 EGP
+د. إيناس فكري (Dr. Enas Fekry)
+600 جنيه مصري / 600 EGP
+د. هشام زكي (Dr. Hisham Zaki)
+600 جنيه مصري / 600 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the Cardiology & Vascular Clinic? ماهي اسعار عيادة القلب والأوعية الدموية؟,"د. عادل حسان (Dr. Adel Hassan)
+700 جنيه مصري / 700 EGP
+د. مروة جمال (Dr. Marwa Gamal)
+650 جنيه مصري / 650 EGP
+د. خالد نور (Dr. Khaled Nour)
+650 جنيه مصري / 650 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the Gastroenterology & Endoscopy Clinic? ماهي اسعار عيادة الجهاز الهضمي والمناظير؟,"د. شريف منصور (Dr. Sherif Mansour)
+700 جنيه مصري / 700 EGP
+د. ريهام صبري (Dr. Reham Sabry)
+650 جنيه مصري / 650 EGP
+د. وائل فريد (Dr. Wael Farid)
+650 جنيه مصري / 650 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the Orthopedics & Joints Clinic? ماهي اسعار عيادة العظام والمفاصل؟,"د. أيمن السعدني (Dr. Ayman El-Saadany)
+700 جنيه مصري / 700 EGP
+د. ليلى أمين (Dr. Leila Amin)
+650 جنيه مصري / 650 EGP
+د. طارق البدري (Dr. Tarek El-Badry)
+650 جنيه مصري / 650 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the Obstetrics & Gynecology Clinic? ماهي اسعار عيادة النساء والتوليد؟,"د. نسرين علام (Dr. Nesrine Allam)
+700 جنيه مصري / 700 EGP
+د. ياسمين الشاذلي (Dr. Yasmin El-Shazly)
+650 جنيه مصري / 650 EGP
+د. مجدي رزق (Dr. Magdy Rizk
+650 جنيه مصري / 650 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the Pediatrics & Neonatology Clinic? ماهي اسعار عيادة الأطفال وحديثي الولادة؟,"د. منى رفعت (Dr. Mona Refaat)
+600 جنيه مصري / 600 EGP
+د. كريم مختار (Dr. Karim Mokhtar)
+550 جنيه مصري / 550 EGP
+د. سارة عيسى (Dr. Sara Eissa)
+550 جنيه مصري / 550 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the Urology Clinic? ماهي اسعار عيادة المسالك البولية؟,"د. أحمد سامي (Dr. Ahmed Samy)
+650 جنيه مصري / 650 EGP
+د. هبة عبد الرحمن (Dr. Heba Abdelrahman)
+600 جنيه مصري / 600 EGP
+د. محمد فؤاد (Dr. Mohamed Fouad)
+600 جنيه مصري / 600 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),"What are the consultation fees for the Dermatology, Aesthetics & Laser Clinic? ماهي اسعار عيادة الجلدية والتجميل والليزر؟","د. ريم مصطفى (Dr. Reem Mostafa)
+750 جنيه مصري / 750 EGP
+د. حسام عابد (Dr. Hussam Abed)
+700 جنيه مصري / 700 EGP
+د. نوران الشناوي (Dr. Nouran El-Shennawy)
+700 جنيه مصري / 700 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the Neurology Clinic? ماهي اسعار عيادة المخ والاعصاب؟,"د. كريم فؤاد (Dr. Karim Fouad)
+700 جنيه مصري / 700 EGP
+د. نوران محمود (Dr. Nourhan Mahmoud)
+650 جنيه مصري / 650 EGP
+د. يوسف طارق (Dr. Yousef Tarek)
+600 جنيه مصري / 600 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the fees for the psychiatry clinic? ماهي اسعار عيادة الطب النفسي؟,"د. ليلى فخري (Dr. Laila Fakhry)
+850 جنيه مصري / 850 EGP
+د. خالد عثمان (Dr. Khaled Osman)
+800 جنيه مصري / 800 EGP
+د. سارة جمال (Dr. Sara Gamal)
+750 جنيه مصري / 750 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),What are the consultation fees for the ENT Clinic? ماهي اسعار عيادة الأنف والأذن والحنجرة؟,"د. شريف عزت (Dr. Sherif Ezzat)
+650 جنيه مصري / 650 EGP
+د. دينا مجدي (Dr. Dina Magdy)
+600 جنيه مصري / 600 EGP
+د. عمر سليم (Dr. Omar Selim)
+600 جنيه مصري / 600 EGP"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices), What are the prices for radiology tests? ماهي اسعار فحوصات قسم الأشعة؟,"أشعة سينية عادية (X-Ray)
+من 200 إلى 400 جنيه
+يختلف حسب الجزء المصور (صدر، عظام، أطراف).
+أشعة مقطعية (CT Scan)
+من 800 إلى 2500 جنيه
+يختلف حسب الجزء المصور واستخدام الصبغة. 
+ مثال: CT مخ: 1200-1800 ج.م 
+ CT بطن وحوض بصبغة: 2000-2500 ج.م
+رنين مغناطيسي (MRI)
+من 1500 إلى 4000 جنيه
+يختلف حسب الجزء المصور واستخدام الصبغة. 
+ مثال: MRI مخ: 2000-3000 ج.م 
+ MRI الركبة: 1800-2500 ج.م
+موجات فوق صوتية (Ultrasound)
+من 300 إلى 700 جنيه
+يختلف حسب الجزء المصور (بطن، حوض، غدة درقية). 
+ مثال: سونار بطن: 400-600 ج.م
+دوبلر ملون (Color Doppler)
+من 500 إلى 1000 جنيه
+يستخدم لتقييم تدفق الدم في الأوعية. 
+ مثال: دوبلر أوردة الساقين: 700-1000 ج.م"
+معلومات عن العيادة / التخصص ( الدكاتره و الاسعار) -  Information about Clinic / Specialty (doctors and prices),أسعار فحوصات قسم التحاليل الطبية (المعمل)؟ ?  What are the Medical Laboratories Prices,"صورة دم كاملة (CBC)
+من 80 إلى 150 جنيه
+تحليل روتيني لتقييم مكونات الدم.
+وظائف كلى (Kidney Function Tests)
+من 150 إلى 300 جنيه
+يشمل كرياتينين وبولينا (Creatinine & Urea).
+وظائف كبد (Liver Function Tests)
+من 200 إلى 400 جنيه
+يشمل إنزيمات الكبد والصفراء (ALT, AST, Bilirubin).
+سكر صائم وفاطر (Fasting & Post-Prandial Glucose)
+من 100 إلى 200 جنيه
+لتقييم مستويات السكر في الدم.
+سكر تراكمي (HbA1c)
+من 200 إلى 350 جنيه
+لتقييم متوسط السكر خلال 3 أشهر.
+هرمونات الغدة الدرقية (Thyroid Hormones)
+من 250 إلى 500 جنيه
+يشمل TSH, Free T3, Free T4.
+فيتامين د (Vitamin D)
+من 400 إلى 700 جنيه
+لتقييم مستوى فيتامين د في الجسم.
+تحليل بول كامل (Complete Urine Analysis)
+من 70 إلى 120 جنيه
+يكشف عن التهابات المسالك البولية أو مشاكل الكلى.
+تحليل براز كامل (Complete Stool Analysis)
+من 80 إلى 150 جنيه
+يكشف عن مشاكل الجهاز الهضمي أو الطفيليات.
+دلالات الأورام (Tumor Markers)
+من 300 إلى 800 جنيه (للتحليل الواحد)
+يختلف السعر حسب نوع الدلالة المطلوبة (مثال: CEA, CA 19-9, PSA)."
+Surgical Procedures Information - معلومات عن العمليات الجراحية ,ماهي العمليات الجراحية المتاحة في المستشفى؟ ?What surgical procedures are available at the hospital,"عملية قلب مفتوح (باي باص - CABG) (Open-Heart Surgery - CABG)
+استبدال مفصل الركبة/الفخذ (الكلي) (Total Knee/Hip Replacement)
+استئصال ورم القولون (جراحة استكشافية) (Colectomy - Exploratory Surgery)
+إستئصال المرارة بالمنظار (Laparoscopic Cholecystectomy)
+عملية إصلاح الانزلاق الغضروفي (العمود الفقري) (Spinal Disc Herniation Repair)
+استئصال الرحم (عن طريق البطن/المنظار) (Hysterectomy - Abdominal/Laparoscopic)
+عملية تكميم المعدة/تحويل المسار (Sleeve Gastrectomy/Gastric Bypass)
+عملية استئصال الزائدة الدودية (بالمنظار) (Laparoscopic Appendectomy)
+عملية الفتق السري (Inguinal/Umbilical Hernia Repair)
+استئصال اللوزتين واللحمية (Tonsillectomy & Adenoidectomy)
+الولادة القيصرية (Cesarean Section - C-Section)
+عملية الختان (ذكور) (Male Circumcision)
+كي أو إستئصال زوائد جلدية/شامات (Cauterization/Excision of Skin Tags/Moles)
+تنظيف الرحم (كحت) (Dilation and Curettage - D&C)
+تصريف الخرّاج/الجروح (Abscess/Wound Drainage)"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية قلب مفتوح (باي باص - CABG) (What is the cost Open-Heart Surgery - CABG),180.000 – 280.000 EGP
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية استبدال مفصل الركبة/الفخذ (الكلي) (What is the cost Total Knee/Hip Replacement)," 90,000 - 150,00 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية استئصال ورم القولون (جراحة استكشافية) (What is the cost Colectomy - Exploratory Surgery),"80,000 - 140,000 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية إستئصال المرارة بالمنظار (What is the cost Laparoscopic Cholecystectomy),"40,000 - 65,000 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية إصلاح الانزلاق الغضروفي (العمود الفقري) (What is the cost Spinal Disc Herniation Repair),"60,000 - 100,000 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية استئصال الرحم (عن طريق البطن/المنظار) (What is the cost Hysterectomy - Abdominal/Laparoscopic),"55,000 - 90,000 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية استئصال الزائدة الدودية (بالمنظار) (What is the cost Laparoscopic Appendectomy),"35,000 - 55,000 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية تكميم المعدة/تحويل المسار (What is the cost Sleeve Gastrectomy/Gastric Bypass),"100,000 - 180,000 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية الفتق السري What is the cost  Inguinal/Umbilical Hernia Repair,"25,000 - 45,000 EGP "
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة استئصال اللوزتين واللحمية What is the cost Tonsillectomy & Adenoidectomy," 20,000 - 35,000 EGP "
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة الولادة القيصرية What is the cost Cesarean Section - C-Section,"30,000 - 50,000 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة عملية الختان (ذكور) (What is the cost Male Circumcision),"8,000 - 15,000 EGP "
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة كي أو إستئصال زوائد جلدية/شامات (What is the cost Cauterization/Excision of Skin Tags/Moles),"5,000 - 10,000 EGP"
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة تنظيف الرحم (كحت) (What is the cost Dilation and Curettage - D&C),"15,000 - 25,000 EGP "
+Surgical Procedures Information (prices) - معلومات عن العمليات الجراحية ( الاسعار) ,ماهي تكلفة تصريف الخرّاج/الجروح (What is the cost Abscess/Wound Drainage),"7,000 - 15,000 EGP "
 التأمين الصحي Health Insurance,ماهي شركات التأمين التي تتعاملون معها؟ - ?Which insurance companies do you deal with,"1. مصر للتأمين
 2. أكسا للتأمين
 3. أليانز للتأمين
@@ -85,8 +316,7 @@ Information about Clinic / Specialty - معلومات عن العيادة / ال
 13. ميد نت
 14. جلوب ميد
 15. أروب للتأمين
-16. وادي النيل للتأمين
-",,,,,
+16. وادي النيل للتأمين"
 التأمين الصحي Health Insurance,ما هي خطوات تطبيق التأمين الطبي على الكشف أو العملية؟,"### ✅ 1. Pre‑Approval / Notification
 
 * Notify your insurer or TPA **before** scheduled procedures (e.g., surgery, MRI) or **within a set timeframe** after emergencies (e.g., 10 days per MetLife in Egypt) ([slideshare.net][1], [wiselyinsure.com][2]).
@@ -111,35 +341,4 @@ Information about Clinic / Specialty - معلومات عن العيادة / ال
 
 ### 🗃️ 6. Keep All Original & Digital Documents
 
-* Save original receipts and medical reports (often required to be submitted within 15–30 days) and keep digital copies for any future queries or disputes .
-
-
-",,,,,
-التأمين الصحي Health Insurance,What are the steps to apply health insurance for an outpatient visit or surgery in Egypt?,"### ✅ 1. Pre‑Approval / Notification
-
-* Notify your insurer or TPA **before** scheduled procedures (e.g., surgery, MRI) or **within a set timeframe** after emergencies (e.g., 10 days per MetLife in Egypt) ([slideshare.net][1], [wiselyinsure.com][2]).
-
-### 📄 2. Gather Required Documents
-
-* **For outpatient (visits, tests, medications):** claim form, doctor's prescription/report, receipts/invoices ([bupaglobal.com][3]).
-* **For inpatient or surgery:** detailed medical report, original hospital bills & receipts, lab/X‑ray/MRI results, discharge summary, police report if accident-related ([metlife.eg][4]).
-
-### 📤 3. Submit the Claim
-
-* Upload via online portal or app, or send by email/fax or deliver to a branch .
-
-### ⏳ 4. Review & Follow‑up
-
-* Insurers aim to process claims within **10–21 working days**, provided all documents are complete; otherwise, they may request more info or reject ([bupaglobal.com][3]).
-
-### 💸 5. Reimbursement or Direct Payment
-
-* For network hospitals: insurer often pays **directly** to the provider.
-* For non-network or self-paid cases: you get **reimbursed** according to your policy terms ([allianz.com.eg][5]).
-
-### 🗃️ 6. Keep All Original & Digital Documents
-
-* Save original receipts and medical reports (often required to be submitted within 15–30 days) and keep digital copies for any future queries or disputes .
-
-
-",,,,,
+* Save original receipts and medical reports (often required to be submitted within 15–30 days) and keep digital copies for any future queries or disputes ."
