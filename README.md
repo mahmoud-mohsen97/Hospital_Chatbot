@@ -2,6 +2,9 @@
 
 A sophisticated hospital chatbot built with LangChain, LangGraph, and Streamlit that provides intelligent responses to hospital-related queries using RAG (Retrieval-Augmented Generation) technology.
 
+![image](https://github.com/user-attachments/assets/4ad776d3-f59f-4d5e-afb0-10e84db2b29e)
+
+
 ## 🌟 Features
 
 - **🗣️ Conversational Interface**: Modern chat interface built with Streamlit
