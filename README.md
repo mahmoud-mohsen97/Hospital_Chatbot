@@ -10,7 +10,7 @@ A sophisticated hospital chatbot built with LangChain, LangGraph, and Streamlit 
 - **🗣️ Conversational Interface**: Modern chat interface built with Streamlit
 - **🧠 RAG Technology**: Retrieval-Augmented Generation for accurate, context-aware responses
 - **💭 Memory Management**: Remembers conversation context for personalized interactions
-- **📚 Multi-Source Knowledge**: Combines hospital FAQ data with comprehensive knowledge base
+- **📚 Multi-Source Knowledge**: Combines hospital FAQ data with a comprehensive knowledge base
 - **✅ Quality Assurance**: Built-in response grading and hallucination detection
 - **🚨 Emergency Detection**: Automatic emergency situation recognition
 - **👍 Feedback System**: User feedback collection with satisfaction metrics
@@ -19,10 +19,16 @@ A sophisticated hospital chatbot built with LangChain, LangGraph, and Streamlit 
 
 ## 🏗️ Architecture
 
-The chatbot uses a sophisticated graph-based architecture:
+The chatbot uses a sophisticated graph-based architecture `(Agentic RAG Workflow)` mainly from my last project [here](https://github.com/mahmoud-mohsen97/Chat_Agents):
 
 ```
-User Query → Route Question → [RAG Pipeline | Simulated Generation] → Grade Documents → Generate Response → Grade Response → Final Answer
+User Query →
+    Route Question →
+        [RAG Pipeline | Simulated Generation] →
+            Grade Documents →
+                Generate Response →
+                    Grade Response →
+                        Final Answer
 ```
 
 ### Core Components
